@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# macOS
+.DS_Store
+
+# Review reports (kept on disk, never committed)
+PROBLEMS.md
+*PROBLEMS*.md
+
+# Secrets
+.env
+.env.*
+!.env.example
+!.env.template
+!.env.sample
+credentials.json
+service-account*.json
+*.pem
+*.key
+id_rsa*

@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 870 310" width="870" height="310" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="a1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#444"/>
+    </marker>
+    <marker id="a2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#c2410c"/>
+    </marker>
+  </defs>
+  <rect width="870" height="310" fill="#ffffff"/>
+
+  <g fill="none" stroke="#444" stroke-width="1.8" marker-end="url(#a1)">
+    <path d="M20,150 L38,150"/>
+    <path d="M80,150 L158,150"/>
+    <path d="M330,150 L418,150"/>
+    <path d="M590,150 L668,150"/>
+    <path d="M710,150 L783,150"/>
+    <path d="M310,170 C330,222 420,222 440,172"/>
+  </g>
+
+  <g fill="none" stroke="#c2410c" stroke-width="1.8" marker-end="url(#a2)">
+    <path d="M200,150 L288,150"/>
+    <path d="M460,150 L548,150"/>
+    <path d="M440,130 C420,74 330,74 310,128"/>
+    <path d="M180,170 C265,292 485,292 570,172"/>
+  </g>
+
+  <g fill="#ffffff" stroke="#333" stroke-width="1.8">
+    <circle cx="60"  cy="150" r="20"/>
+    <circle cx="180" cy="150" r="20"/>
+    <circle cx="310" cy="150" r="20"/>
+    <circle cx="440" cy="150" r="20"/>
+    <circle cx="570" cy="150" r="20"/>
+    <circle cx="690" cy="150" r="20"/>
+    <circle cx="810" cy="150" r="25"/>
+    <circle cx="810" cy="150" r="20"/>
+  </g>
+
+  <g fill="#111" font-size="15" text-anchor="middle" dominant-baseline="central">
+    <text x="60"  y="150">i</text>
+    <text x="180" y="150">1</text>
+    <text x="310" y="150">2</text>
+    <text x="440" y="150">3</text>
+    <text x="570" y="150">4</text>
+    <text x="690" y="150">5</text>
+    <text x="810" y="150">f</text>
+  </g>
+
+  <g font-size="15" text-anchor="middle" font-weight="600">
+    <text x="119" y="138" fill="#444">a</text>
+    <text x="374" y="138" fill="#444">a</text>
+    <text x="629" y="138" fill="#444">b</text>
+    <text x="746" y="138" fill="#444">b</text>
+    <text x="375" y="226" fill="#444">b</text>
+    <text x="244" y="138" fill="#c2410c">ε</text>
+    <text x="504" y="138" fill="#c2410c">ε</text>
+    <text x="375" y="78"  fill="#c2410c">ε</text>
+    <text x="375" y="292" fill="#c2410c">ε</text>
+  </g>
+</svg>
