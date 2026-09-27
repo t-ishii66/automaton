@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 130" width="300" height="130" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="a1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#444"/>
+    </marker>
+    <marker id="a2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#c2410c"/>
+    </marker>
+    <marker id="a3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#bbbbbb"/>
+    </marker>
+  </defs>
+  <rect width="300" height="130" fill="#ffffff"/>
+  <g fill="none" stroke="#444" stroke-width="1.8" marker-end="url(#a1)">
+    <path d="M20,65 L42,65"/>
+    <path d="M88,65 L192,65"/>
+  </g>
+  <g fill="#ffffff" stroke="#333" stroke-width="1.8">
+    <circle cx="70" cy="65" r="18"/>
+    <circle cx="210" cy="65" r="18"/>
+  </g>
+  <g fill="#111" font-size="15" font-weight="normal" text-anchor="middle" dominant-baseline="central">
+    <text x="70" y="65">i</text>
+    <text x="210" y="65">1</text>
+  </g>
+  <g fill="#444" font-size="15" font-weight="600" text-anchor="middle" dominant-baseline="central">
+    <text x="140" y="50">a</text>
+  </g>
+</svg>

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 140" width="500" height="140" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="a1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#444"/>
+    </marker>
+    <marker id="a2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#c2410c"/>
+    </marker>
+    <marker id="a3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#bbbbbb"/>
+    </marker>
+  </defs>
+  <rect width="500" height="140" fill="#ffffff"/>
+  <g fill="#666" font-size="13" font-weight="normal" text-anchor="middle" dominant-baseline="central">
+    <text x="115" y="26">ε で繋がっている</text>
+    <text x="385" y="26">1 つの状態とみなす</text>
+  </g>
+  <g fill="none" stroke="#c2410c" stroke-width="1.8" marker-end="url(#a2)">
+    <path d="M78,80 L152,80"/>
+  </g>
+  <g fill="none" stroke="#bbbbbb" stroke-width="3" marker-end="url(#a3)">
+    <path d="M240,80 L290,80"/>
+  </g>
+  <g fill="#ffffff" stroke="#333" stroke-width="1.8">
+    <circle cx="60" cy="80" r="18"/>
+    <circle cx="170" cy="80" r="18"/>
+  </g>
+  <g fill="#ffffff" stroke="#333" stroke-width="1.8">
+    <ellipse cx="385" cy="80" rx="36" ry="22"/>
+  </g>
+  <g fill="#111" font-size="15" font-weight="normal" text-anchor="middle" dominant-baseline="central">
+    <text x="60" y="80">s</text>
+    <text x="170" y="80">t</text>
+    <text x="385" y="80">s,t</text>
+  </g>
+  <g fill="#c2410c" font-size="15" font-weight="600" text-anchor="middle" dominant-baseline="central">
+    <text x="115" y="58">ε</text>
+  </g>
+</svg>

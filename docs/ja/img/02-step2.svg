@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 530 270" width="530" height="270" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="a1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#444"/>
+    </marker>
+    <marker id="a2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#c2410c"/>
+    </marker>
+    <marker id="a3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#bbbbbb"/>
+    </marker>
+  </defs>
+  <rect width="530" height="270" fill="#ffffff"/>
+  <g fill="none" stroke="#bbbbbb" stroke-width="1.8" marker-end="url(#a3)">
+    <path d="M218,110 L312,110"/>
+    <path d="M200,128 C224,166 306,166 330,130"/>
+  </g>
+  <g fill="none" stroke="#c2410c" stroke-width="1.8" marker-end="url(#a2)">
+    <path d="M88,110 L182,110"/>
+    <path d="M330,92 C306,54 224,54 200,92"/>
+    <path d="M348,110 L442,110"/>
+    <path d="M70,128 C150,225 380,225 460,128"/>
+  </g>
+  <g fill="#ffffff" stroke="#bbbbbb" stroke-width="1.8">
+    <circle cx="200" cy="110" r="18"/>
+    <circle cx="330" cy="110" r="18"/>
+  </g>
+  <g fill="#ffffff" stroke="#333" stroke-width="1.8">
+    <circle cx="70" cy="110" r="18"/>
+    <circle cx="460" cy="110" r="18"/>
+  </g>
+  <g fill="#111" font-size="15" font-weight="normal" text-anchor="middle" dominant-baseline="central">
+    <text x="70" y="110">1</text>
+    <text x="460" y="110">4</text>
+  </g>
+  <g fill="#999" font-size="15" font-weight="normal" text-anchor="middle" dominant-baseline="central">
+    <text x="200" y="110">2</text>
+    <text x="330" y="110">3</text>
+  </g>
+  <g fill="#bbbbbb" font-size="15" font-weight="600" text-anchor="middle" dominant-baseline="central">
+    <text x="265" y="98">a</text>
+    <text x="265" y="182">b</text>
+  </g>
+  <g fill="#c2410c" font-size="14" font-weight="600" text-anchor="middle" dominant-baseline="central">
+    <text x="135" y="94">ε 入る</text>
+    <text x="265" y="44">ε 戻る</text>
+    <text x="395" y="94">ε 抜ける</text>
+    <text x="265" y="246">ε 飛ばす</text>
+  </g>
+</svg>

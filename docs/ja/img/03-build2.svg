@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 120" width="480" height="120" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="a1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#444"/>
+    </marker>
+    <marker id="a2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#c2410c"/>
+    </marker>
+    <marker id="a3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#bbbbbb"/>
+    </marker>
+  </defs>
+  <rect width="480" height="120" fill="#ffffff"/>
+  <g fill="none" stroke="#bbbbbb" stroke-width="1.8" marker-end="url(#a3)">
+    <path d="M12,60 L34,60"/>
+    <path d="M82,60 L160,60"/>
+  </g>
+  <g fill="none" stroke="#444" stroke-width="1.8" marker-end="url(#a1)">
+    <path d="M256,60 L334,60"/>
+  </g>
+  <g fill="#ffffff" stroke="#bbbbbb" stroke-width="1.8">
+    <circle cx="60" cy="60" r="20"/>
+  </g>
+  <g fill="#ffffff" stroke="#bbbbbb" stroke-width="1.8">
+    <ellipse cx="210" cy="60" rx="44" ry="24"/>
+  </g>
+  <g fill="#ffffff" stroke="#333" stroke-width="1.8">
+    <ellipse cx="384" cy="60" rx="44" ry="24"/>
+  </g>
+  <g fill="#999" font-size="15" font-weight="normal" text-anchor="middle" dominant-baseline="central">
+    <text x="60" y="60">i</text>
+    <text x="210" y="60">1,2,4</text>
+  </g>
+  <g fill="#111" font-size="15" font-weight="normal" text-anchor="middle" dominant-baseline="central">
+    <text x="384" y="60">2,3,4</text>
+  </g>
+  <g fill="#bbbbbb" font-size="15" font-weight="600" text-anchor="middle" dominant-baseline="central">
+    <text x="121" y="44">a</text>
+  </g>
+  <g fill="#444" font-size="15" font-weight="600" text-anchor="middle" dominant-baseline="central">
+    <text x="295" y="44">a</text>
+  </g>
+</svg>
