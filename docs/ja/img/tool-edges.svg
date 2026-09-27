@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 462" width="720" height="462" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif">
+  <rect width="720" height="462" fill="#ffffff"/>
+  <text x="28" y="34" font-size="15" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" fill="#555">self.edges = { 状態 : [ (記号, 行き先), ... ] }</text>
+  <line x1="28" y1="50" x2="692" y2="50" stroke="#e5e5e5" stroke-width="1"/>
+  <circle cx="56" cy="82" r="16" fill="#ffffff" stroke="#333" stroke-width="1.6"/>
+  <text x="56" y="82" font-size="14" fill="#111" text-anchor="middle" dominant-baseline="central">0</text>
+  <text x="80" y="82" font-size="13" fill="#888" dominant-baseline="central">（i）</text>
+  <text x="128" y="82" font-size="15" fill="#888" dominant-baseline="central">:</text>
+  <rect x="150" y="66.0" width="112" height="32" rx="7" fill="#ffffff" stroke="#cccccc" stroke-width="1.6"/>
+  <text x="206.0" y="82" font-size="14" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" fill="#111" text-anchor="middle" dominant-baseline="central">('a', 1)</text>
+  <circle cx="56" cy="130" r="16" fill="#ffffff" stroke="#333" stroke-width="1.6"/>
+  <text x="56" y="130" font-size="14" fill="#111" text-anchor="middle" dominant-baseline="central">1</text>
+  <text x="80" y="130" font-size="13" fill="#888" dominant-baseline="central">（1）</text>
+  <text x="128" y="130" font-size="15" fill="#888" dominant-baseline="central">:</text>
+  <rect x="150" y="114.0" width="112" height="32" rx="7" fill="#ffffff" stroke="#f0b89b" stroke-width="1.6"/>
+  <text x="206.0" y="130" font-size="14" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" fill="#c2410c" text-anchor="middle" dominant-baseline="central">(EPS, 2)</text>
+  <rect x="274" y="114.0" width="112" height="32" rx="7" fill="#ffffff" stroke="#f0b89b" stroke-width="1.6"/>
+  <text x="330.0" y="130" font-size="14" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" fill="#c2410c" text-anchor="middle" dominant-baseline="central">(EPS, 4)</text>
+  <text x="410" y="130" font-size="13" fill="#888" dominant-baseline="central">ε で 2 と 4 の両方へ行ける</text>
+  <circle cx="56" cy="178" r="16" fill="#ffffff" stroke="#333" stroke-width="1.6"/>
+  <text x="56" y="178" font-size="14" fill="#111" text-anchor="middle" dominant-baseline="central">2</text>
+  <text x="80" y="178" font-size="13" fill="#888" dominant-baseline="central">（2）</text>
+  <text x="128" y="178" font-size="15" fill="#888" dominant-baseline="central">:</text>
+  <rect x="150" y="162.0" width="112" height="32" rx="7" fill="#ffffff" stroke="#cccccc" stroke-width="1.6"/>
+  <text x="206.0" y="178" font-size="14" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" fill="#111" text-anchor="middle" dominant-baseline="central">('a', 3)</text>
+  <rect x="274" y="162.0" width="112" height="32" rx="7" fill="#ffffff" stroke="#cccccc" stroke-width="1.6"/>
+  <text x="330.0" y="178" font-size="14" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" fill="#111" text-anchor="middle" dominant-baseline="central">('b', 3)</text>
+  <text x="410" y="178" font-size="13" fill="#888" dominant-baseline="central">違う記号で同じ行き先</text>
+  <circle cx="56" cy="226" r="16" fill="#ffffff" stroke="#333" stroke-width="1.6"/>
+  <text x="56" y="226" font-size="14" fill="#111" text-anchor="middle" dominant-baseline="central">3</text>
+  <text x="80" y="226" font-size="13" fill="#888" dominant-baseline="central">（3）</text>
+  <text x="128" y="226" font-size="15" fill="#888" dominant-baseline="central">:</text>
+  <rect x="150" y="210.0" width="112" height="32" rx="7" fill="#ffffff" stroke="#f0b89b" stroke-width="1.6"/>
+  <text x="206.0" y="226" font-size="14" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" fill="#c2410c" text-anchor="middle" dominant-baseline="central">(EPS, 2)</text>
+  <rect x="274" y="210.0" width="112" height="32" rx="7" fill="#ffffff" stroke="#f0b89b" stroke-width="1.6"/>
+  <text x="330.0" y="226" font-size="14" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" fill="#c2410c" text-anchor="middle" dominant-baseline="central">(EPS, 4)</text>
+  <circle cx="56" cy="274" r="16" fill="#ffffff" stroke="#333" stroke-width="1.6"/>
+  <text x="56" y="274" font-size="14" fill="#111" text-anchor="middle" dominant-baseline="central">4</text>
+  <text x="80" y="274" font-size="13" fill="#888" dominant-baseline="central">（4）</text>
+  <text x="128" y="274" font-size="15" fill="#888" dominant-baseline="central">:</text>
+  <rect x="150" y="258.0" width="112" height="32" rx="7" fill="#ffffff" stroke="#cccccc" stroke-width="1.6"/>
+  <text x="206.0" y="274" font-size="14" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" fill="#111" text-anchor="middle" dominant-baseline="central">('b', 5)</text>
+  <circle cx="56" cy="322" r="16" fill="#ffffff" stroke="#333" stroke-width="1.6"/>
+  <text x="56" y="322" font-size="14" fill="#111" text-anchor="middle" dominant-baseline="central">5</text>
+  <text x="80" y="322" font-size="13" fill="#888" dominant-baseline="central">（5）</text>
+  <text x="128" y="322" font-size="15" fill="#888" dominant-baseline="central">:</text>
+  <rect x="150" y="306.0" width="112" height="32" rx="7" fill="#ffffff" stroke="#cccccc" stroke-width="1.6"/>
+  <text x="206.0" y="322" font-size="14" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" fill="#111" text-anchor="middle" dominant-baseline="central">('b', 6)</text>
+  <circle cx="56" cy="370" r="16" fill="#ffffff" stroke="#333" stroke-width="1.6"/>
+  <text x="56" y="370" font-size="14" fill="#111" text-anchor="middle" dominant-baseline="central">6</text>
+  <text x="80" y="370" font-size="13" fill="#888" dominant-baseline="central">（f）</text>
+  <text x="128" y="370" font-size="15" fill="#888" dominant-baseline="central">:</text>
+  <text x="150" y="370" font-size="15" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" fill="#888" dominant-baseline="central">[ ]</text>
+  <text x="410" y="370" font-size="13" fill="#888" dominant-baseline="central">空のリスト＝出ていく矢印なし</text>
+  <text x="28" y="426" font-size="13" fill="#888">丸の中は状態の番号。図で使う i, 1, 2, … f という名前は label が別に持っている</text>
+  <text x="28" y="448" font-size="13" fill="#888">EPS は ε 遷移を表す印。リストの 1 要素が、図の矢印 1 本にあたる</text>
+</svg>

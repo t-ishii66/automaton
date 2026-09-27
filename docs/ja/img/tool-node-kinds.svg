@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 424" width="880" height="424" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif">
+  <rect width="880" height="424" fill="#ffffff"/>
+  <g stroke="#e5e5e5" stroke-width="1">
+    <line x1="435" y1="14" x2="435" y2="392"/>
+    <line x1="14" y1="190" x2="866" y2="190"/>
+  </g>
+  <text x="24" y="32" font-size="14" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" fill="#c2410c">('sym', 'a')</text>
+  <rect x="180" y="56" width="76" height="32" rx="7" fill="#ffffff" stroke="#333" stroke-width="1.6"/>
+  <text x="218.0" y="72.0" font-size="15" fill="#111" text-anchor="middle" dominant-baseline="central">sym</text>
+  <line x1="218.0" y1="88" x2="218" y2="124" stroke="#bbbbbb" stroke-width="1.5"/>
+  <rect x="186" y="124" width="64" height="30" rx="7" fill="#f4f4f4" stroke="#cccccc" stroke-width="1.6"/>
+  <text x="218.0" y="139.0" font-size="14" fill="#111" text-anchor="middle" dominant-baseline="central">'a'</text>
+  <text x="218" y="176" font-size="13" fill="#666" text-anchor="middle">記号 1 文字。これ以上分かれない</text>
+  <text x="464" y="32" font-size="14" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" fill="#c2410c">('cat', x, y)</text>
+  <rect x="620" y="56" width="76" height="32" rx="7" fill="#ffffff" stroke="#333" stroke-width="1.6"/>
+  <text x="658.0" y="72.0" font-size="15" fill="#111" text-anchor="middle" dominant-baseline="central">cat</text>
+  <line x1="658.0" y1="88" x2="598" y2="124" stroke="#bbbbbb" stroke-width="1.5"/>
+  <rect x="568" y="124" width="60" height="30" rx="7" fill="#ffffff" stroke="#999999" stroke-width="1.6" stroke-dasharray="5 4"/>
+  <text x="598.0" y="139.0" font-size="15" fill="#111" text-anchor="middle" dominant-baseline="central">x</text>
+  <line x1="658.0" y1="88" x2="718" y2="124" stroke="#bbbbbb" stroke-width="1.5"/>
+  <rect x="688" y="124" width="60" height="30" rx="7" fill="#ffffff" stroke="#999999" stroke-width="1.6" stroke-dasharray="5 4"/>
+  <text x="718.0" y="139.0" font-size="15" fill="#111" text-anchor="middle" dominant-baseline="central">y</text>
+  <text x="658" y="176" font-size="13" fill="#666" text-anchor="middle">x のあとに y が続く（連接）</text>
+  <text x="24" y="227" font-size="14" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" fill="#c2410c">('alt', x, y)</text>
+  <rect x="180" y="251" width="76" height="32" rx="7" fill="#ffffff" stroke="#333" stroke-width="1.6"/>
+  <text x="218.0" y="267.0" font-size="15" fill="#111" text-anchor="middle" dominant-baseline="central">alt</text>
+  <line x1="218.0" y1="283" x2="158" y2="319" stroke="#bbbbbb" stroke-width="1.5"/>
+  <rect x="128" y="319" width="60" height="30" rx="7" fill="#ffffff" stroke="#999999" stroke-width="1.6" stroke-dasharray="5 4"/>
+  <text x="158.0" y="334.0" font-size="15" fill="#111" text-anchor="middle" dominant-baseline="central">x</text>
+  <line x1="218.0" y1="283" x2="278" y2="319" stroke="#bbbbbb" stroke-width="1.5"/>
+  <rect x="248" y="319" width="60" height="30" rx="7" fill="#ffffff" stroke="#999999" stroke-width="1.6" stroke-dasharray="5 4"/>
+  <text x="278.0" y="334.0" font-size="15" fill="#111" text-anchor="middle" dominant-baseline="central">y</text>
+  <text x="218" y="371" font-size="13" fill="#666" text-anchor="middle">x または y（選択）</text>
+  <text x="464" y="227" font-size="14" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" fill="#c2410c">('star', x)</text>
+  <rect x="620" y="251" width="76" height="32" rx="7" fill="#ffffff" stroke="#333" stroke-width="1.6"/>
+  <text x="658.0" y="267.0" font-size="15" fill="#111" text-anchor="middle" dominant-baseline="central">star</text>
+  <line x1="658.0" y1="283" x2="658" y2="319" stroke="#bbbbbb" stroke-width="1.5"/>
+  <rect x="628" y="319" width="60" height="30" rx="7" fill="#ffffff" stroke="#999999" stroke-width="1.6" stroke-dasharray="5 4"/>
+  <text x="658.0" y="334.0" font-size="15" fill="#111" text-anchor="middle" dominant-baseline="central">x</text>
+  <text x="658" y="371" font-size="13" fill="#666" text-anchor="middle">x の 0 回以上の繰り返し</text>
+  <text x="24" y="412" font-size="13" fill="#888">破線は別の node が入るところ。灰色の枠は node ではなく文字そのもの</text>
+</svg>
