@@ -1,6 +1,6 @@
 # 付録 1. パターンを読んで NFA にする
 
-![分かれ道の目印を見て道を選ぶBobとAlice、草むらのウサギ](img/alice-bob-appendix-ll1.png)
+![分かれ道の目印を見て道を選ぶBobとAlice、草むらのウサギ](img/alice-bob-appendix-tool.png)
 
 [01](01-automaton.md)〜[04](04-minimize.md) で追った手順を順に繋ぐと、
 そのまま動くパターンマッチツールになる。ここではそれを実際に作る。
