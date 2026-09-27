@@ -51,5 +51,6 @@ a(a|b)*bb
 | [02](02-regex-to-nfa.md) | 正規表現 `a(a\|b)*bb` から NFA を作る |
 | [03](03-nfa-to-dfa.md) | 行き先が 1 つに決まる形（DFA）に変換する |
 | [04](04-minimize.md) | DFA の状態数を最小化する |
-| [付録 1](appendix-tool-1.md) | ここまでを繋ぐ。パターンを読んで NFA にする |
-| [付録 2](appendix-tool-2.md) | DFA にして判定し、コマンドとして仕上げる |
+| [05](05-subset.md) | ここから実装編。扱う正規表現の範囲を決める |
+| [06](06-parse-nfa.md) | パターンを読んで NFA にする |
+| [07](07-dfa-match.md) | DFA にして判定し、コマンドとして仕上げる |

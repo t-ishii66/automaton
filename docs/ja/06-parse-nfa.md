@@ -1,53 +1,12 @@
-# 付録 1. パターンを読んで NFA にする
+# 06. パターンを読んで NFA にする
 
-![分かれ道の目印を見て道を選ぶBobとAlice、草むらのウサギ](img/alice-bob-appendix-tool.png)
+![分かれ道の目印を見て道を選ぶBobとAlice、草むらのウサギ](img/alice-bob-06-parse-nfa.png)
 
-[01](01-automaton.md)〜[04](04-minimize.md) で追った手順を順に繋ぐと、
-そのまま動くパターンマッチツールになる。ここではそれを実際に作る。
+[05](05-subset.md) で決めた範囲の正規表現を受け取り、NFA にするところまでを作る。
+やることは 2 つ、パターンを読んで構造を取り出すことと、
+[02](02-regex-to-nfa.md) の 4 つの規則を当てはめることである。
 
-扱えるのは `|`（選択）、`( )`（括弧）、`*`（繰り返し）、そして文字を並べた連接だけ。
-`+` も `?` も `.` も文字クラスも無い。それでも正規表現の骨格はこれで揃っている。
-
-## 使う
-
-パターンとテキストを渡すと、一致するかどうかを答える。
-
-```
-$ python3 -m automaton 'a(a|b)*bb' abb ab aabb ababb bb
-match     'abb'
-no match  'ab'
-match     'aabb'
-match     'ababb'
-no match  'bb'
-```
-
-テキストを渡さなければ標準入力から読むので、grep のようにも使える。
-
-```
-$ printf 'abb\nab\naabb\nxyz\nababb\n' | python3 -m automaton 'a(a|b)*bb'
-abb
-aabb
-ababb
-```
-
-## 全体の流れ
-
-![ツールの処理の流れ](img/tool-pipeline.svg)
-
-本編の各章が、そのまま 1 つの部品になっている。
-
-| 段階 | 本編 | ファイル |
-| --- | --- | --- |
-| 正規表現を読む | （この付録） | `automaton/regex.py` |
-| NFA を作る | [02](02-regex-to-nfa.md) | `automaton/nfa.py` |
-| DFA にする | [03](03-nfa-to-dfa.md) | `automaton/dfa.py` |
-| 状態数を最小化する | [04](04-minimize.md) | `automaton/dfa.py` |
-| 一致判定 | [04](04-minimize.md) | `automaton/dfa.py` |
-| 繋いでツールにする | （この付録） | `automaton/__main__.py` |
-
-外部ライブラリは使わない。Python の標準ライブラリだけで動く。
-
-## 1. 正規表現を読む
+## 1. パターンを読む
 
 本編では `a(a|b)*bb` の構造を人間が見て取っていたが、
 ツールにするならここも機械にやらせる必要がある。
@@ -348,6 +307,5 @@ return _build(nfa, node[2], m)     後に来る方を m から作り、その到
 
 ---
 
-ここまでで、パターンから NFA ができた。
-[付録 2](appendix-tool-2.md) では、これを DFA に変えて一致判定まで持っていき、
-ツールとして繋ぐ。
+ここまでで、どんなパターンからでも NFA が作れるようになった。
+[07](07-dfa-match.md) では、これを DFA に変えて一致判定まで持っていく。
