@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 320" width="900" height="320" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="d" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#444"/></marker>
+    <marker id="o" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#c2410c"/></marker>
+  </defs>
+  <rect width="900" height="320" fill="#ffffff"/>
+  <text x="24" y="28" font-size="14" fill="#333" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="600">closure(nfa, [1]) ─ ε だけを辿って集める</text>
+  <ellipse cx="120" cy="130" rx="14" ry="15" fill="#ffffff" stroke="#111" stroke-width="1.8"/>
+  <text x="120" y="130" font-size="11" fill="#111" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">1</text>
+  <ellipse cx="240" cy="90" rx="14" ry="15" fill="#ffffff" stroke="#999" stroke-width="1.4"/>
+  <text x="240" y="90" font-size="11" fill="#999" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">2</text>
+  <ellipse cx="240" cy="170" rx="14" ry="15" fill="#ffffff" stroke="#999" stroke-width="1.4"/>
+  <text x="240" y="170" font-size="11" fill="#999" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">4</text>
+  <path d="M136,124 L222,96" fill="none" stroke="#c2410c" stroke-width="1.6" marker-end="url(#o)"/>
+  <path d="M136,136 L222,164" fill="none" stroke="#c2410c" stroke-width="1.6" marker-end="url(#o)"/>
+  <text x="178" y="96" font-size="12" fill="#c2410c" text-anchor="middle" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="600">ε</text>
+  <text x="178" y="168" font-size="12" fill="#c2410c" text-anchor="middle" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="600">ε</text>
+  <text x="120" y="174" font-size="11" fill="#888" text-anchor="middle" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">出発点</text>
+  <text x="300" y="90" font-size="11" fill="#888" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">← ε で行ける</text>
+  <text x="300" y="170" font-size="11" fill="#888" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">← ε で行ける</text>
+  <text x="24" y="240" font-size="12.5" fill="#444" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">2 と 4 からは ε が出ていないので、ここで止まる。</text>
+  <text x="24" y="264" font-size="12.5" fill="#444" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">結果 closure = { 1, 2, 4 }。「1 にいる」は「1 か 2 か 4 のどれかにいる」と同じ意味になる。</text>
+  <text x="470" y="60" font-size="12" fill="#888" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="600">手順</text>
+  <text x="523.0" y="60" font-size="12" fill="#888" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="600">todo から取り出す</text>
+  <text x="670.0" y="60" font-size="12" fill="#888" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="600">out に追加</text>
+  <text x="768.5" y="60" font-size="12" fill="#888" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="600">out</text>
+  <text x="850.5" y="60" font-size="12" fill="#888" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="600">todo</text>
+  <line x1="464" y1="75" x2="896.5" y2="75" stroke="#e5e5e5" stroke-width="1"/>
+  <text x="470" y="92.0" font-size="12.5" fill="#111" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">開始</text>
+  <text x="523.0" y="92.0" font-size="12.5" fill="#111" text-anchor="start" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">—</text>
+  <text x="670.0" y="92.0" font-size="12.5" fill="#111" text-anchor="start" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">—</text>
+  <text x="768.5" y="92.0" font-size="12.5" fill="#111" text-anchor="start" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">{1}</text>
+  <text x="850.5" y="92.0" font-size="12.5" fill="#111" text-anchor="start" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">[1]</text>
+  <line x1="464" y1="105.0" x2="896.5" y2="105.0" stroke="#f2f2f2" stroke-width="1"/>
+  <text x="470" y="118.0" font-size="12.5" fill="#111" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">1</text>
+  <text x="523.0" y="118.0" font-size="12.5" fill="#111" text-anchor="start" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">1</text>
+  <text x="670.0" y="118.0" font-size="12.5" fill="#111" text-anchor="start" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">2, 4</text>
+  <text x="768.5" y="118.0" font-size="12.5" fill="#111" text-anchor="start" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">{1,2,4}</text>
+  <text x="850.5" y="118.0" font-size="12.5" fill="#111" text-anchor="start" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">[2,4]</text>
+  <line x1="464" y1="131.0" x2="896.5" y2="131.0" stroke="#f2f2f2" stroke-width="1"/>
+  <text x="470" y="144.0" font-size="12.5" fill="#111" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">2</text>
+  <text x="523.0" y="144.0" font-size="12.5" fill="#111" text-anchor="start" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">4</text>
+  <text x="670.0" y="144.0" font-size="12.5" fill="#111" text-anchor="start" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">なし</text>
+  <text x="768.5" y="144.0" font-size="12.5" fill="#111" text-anchor="start" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">{1,2,4}</text>
+  <text x="850.5" y="144.0" font-size="12.5" fill="#111" text-anchor="start" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">[2]</text>
+  <line x1="464" y1="157.0" x2="896.5" y2="157.0" stroke="#f2f2f2" stroke-width="1"/>
+  <text x="470" y="170.0" font-size="12.5" fill="#111" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">3</text>
+  <text x="523.0" y="170.0" font-size="12.5" fill="#111" text-anchor="start" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">2</text>
+  <text x="670.0" y="170.0" font-size="12.5" fill="#111" text-anchor="start" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">なし</text>
+  <text x="768.5" y="170.0" font-size="12.5" fill="#111" text-anchor="start" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">{1,2,4}</text>
+  <text x="850.5" y="170.0" font-size="12.5" fill="#111" text-anchor="start" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">[ ]</text>
+</svg>
