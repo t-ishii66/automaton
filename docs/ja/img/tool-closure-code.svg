@@ -34,22 +34,24 @@
   <path d="M622,326 C648,312 648,128 630,112" fill="none" stroke="#bbbbbb" stroke-width="1.6" marker-end="url(#g)"/>
   <text x="348" y="340" font-size="12" fill="#888" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">todo が空になるまで繰り返す</text>
   <text x="730" y="76" font-size="13" fill="#666" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="600">止まる理由</text>
-  <ellipse cx="786" cy="128" rx="18" ry="15" fill="#ffffff" stroke="#999" stroke-width="1.4"/>
-  <text x="786" y="128" font-size="12" fill="#999" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">p</text>
-  <ellipse cx="890" cy="128" rx="18" ry="15" fill="#ffffff" stroke="#999" stroke-width="1.4"/>
-  <text x="890" y="128" font-size="12" fill="#999" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">q</text>
-  <path d="M800,118 C824,102 852,102 876,118" fill="none" stroke="#c2410c" stroke-width="1.6" marker-end="url(#o)"/>
-  <path d="M876,138 C852,154 824,154 800,138" fill="none" stroke="#c2410c" stroke-width="1.6" marker-end="url(#o)"/>
-  <text x="838" y="96" font-size="13" fill="#c2410c" text-anchor="middle" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">ε</text>
-  <text x="838" y="162" font-size="13" fill="#c2410c" text-anchor="middle" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">ε</text>
-  <text x="730" y="194" font-size="12" fill="#888" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">ε が輪になっていても、2 度目の</text>
-  <text x="730" y="216" font-size="12" fill="#888" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">p と q は t not in out で弾かれ、</text>
-  <text x="730" y="238" font-size="12" fill="#888" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">todo に積まれない</text>
-  <text x="730" y="282" font-size="12" fill="#888" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">記号の付いた矢印は、ここでは</text>
-  <text x="730" y="304" font-size="12" fill="#888" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">1 本も辿らない</text>
-  <text x="730" y="330" font-size="12" fill="#888" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">（記号で進むのは move の仕事）</text>
+  <text x="730" y="104" font-size="12" fill="#888" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">(a*)* のように * が入れ子だと</text>
+  <text x="730" y="126" font-size="12" fill="#888" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">ε だけの輪ができる</text>
+  <ellipse cx="786" cy="172" rx="18" ry="15" fill="#ffffff" stroke="#999" stroke-width="1.4"/>
+  <text x="786" y="172" font-size="12" fill="#999" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">1</text>
+  <ellipse cx="890" cy="172" rx="18" ry="15" fill="#ffffff" stroke="#999" stroke-width="1.4"/>
+  <text x="890" y="172" font-size="12" fill="#999" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">4</text>
+  <path d="M800,162 C824,146 852,146 876,162" fill="none" stroke="#c2410c" stroke-width="1.6" marker-end="url(#o)"/>
+  <path d="M876,182 C852,198 824,198 800,182" fill="none" stroke="#c2410c" stroke-width="1.6" marker-end="url(#o)"/>
+  <text x="838" y="140" font-size="13" fill="#c2410c" text-anchor="middle" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">ε</text>
+  <text x="838" y="206" font-size="13" fill="#c2410c" text-anchor="middle" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">ε</text>
+  <text x="730" y="236" font-size="12" fill="#888" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">2 周目の 1 は out にあるので</text>
+  <text x="730" y="258" font-size="12" fill="#888" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">t not in out で弾かれ、todo に</text>
+  <text x="730" y="280" font-size="12" fill="#888" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">積まれない。そこで止まる</text>
+  <text x="730" y="316" font-size="12" fill="#888" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">記号の付いた矢印は、ここでは</text>
+  <text x="730" y="338" font-size="12" fill="#888" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">1 本も辿らない（move の仕事）</text>
   <line x1="24" y1="398" x2="956" y2="398" stroke="#eeeeee" stroke-width="1"/>
   <text x="24" y="426" font-size="13" fill="#111" text-anchor="start" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">return frozenset(out)</text>
   <text x="224" y="426" font-size="12" fill="#888" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">集合として返す。重複も順番も気にしなくていい</text>
   <text x="24" y="452" font-size="12" fill="#888" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">この集合 1 つが、部分集合構成では DFA の状態 1 つになる</text>
+  <text x="560" y="452" font-size="12" fill="#888" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">右上の図の状態名は (a*)* の NFA のもの。a(a|b)*bb の番号とは別物</text>
   </svg>
