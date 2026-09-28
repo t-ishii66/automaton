@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 440" width="940" height="440" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="a1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#444"/>
+    </marker>
+  </defs>
+  <rect width="940" height="440" fill="#ffffff"/>
+  <text x="24" y="30" font-size="14" fill="#333" text-anchor="start" dominant-baseline="central" font-weight="600">出揃った 5 つの集合を、そのまま状態にした DFA</text>
+  <line x1="24" y1="48" x2="916" y2="48" stroke="#eeeeee" stroke-width="1"/>
+
+  <g transform="translate(20,64)">
+    <g fill="none" stroke="#444" stroke-width="1.8" marker-end="url(#a1)">
+      <path d="M10,100 L30,100"/>
+      <path d="M88,100 L180,100"/>
+      <path d="M278,100 L420,100"/>
+      <path d="M725,100 L520,100"/>
+      <path d="M452,78 C434,32 506,32 488,78"/>
+      <path d="M772,71 C754,24 826,24 808,71"/>
+      <path d="M255,120 L428,243"/>
+      <path d="M454,126 L454,234"/>
+      <path d="M486,234 L486,126"/>
+      <path d="M520,250 L738,128"/>
+    </g>
+
+    <g fill="#ffffff" stroke="#333" stroke-width="1.8">
+      <ellipse cx="60"  cy="100" rx="26" ry="24"/>
+      <ellipse cx="230" cy="100" rx="46" ry="24"/>
+      <ellipse cx="470" cy="100" rx="46" ry="24"/>
+      <ellipse cx="470" cy="260" rx="54" ry="24"/>
+      <ellipse cx="790" cy="100" rx="63" ry="31"/>
+      <ellipse cx="790" cy="100" rx="58" ry="26"/>
+    </g>
+
+    <g fill="#111" font-size="15" text-anchor="middle" dominant-baseline="central">
+      <text x="60"  y="100">i</text>
+      <text x="230" y="100">1,2,4</text>
+      <text x="470" y="100">2,3,4</text>
+      <text x="470" y="260">2,3,4,5</text>
+      <text x="790" y="100">2,3,4,5,f</text>
+    </g>
+
+    <g fill="#444" font-size="15" font-weight="600" text-anchor="middle">
+      <text x="134" y="88">a</text>
+      <text x="349" y="88">a</text>
+      <text x="622" y="88">a</text>
+      <text x="470" y="26">a</text>
+      <text x="790" y="18">b</text>
+      <text x="318" y="202">b</text>
+      <text x="432" y="180">b</text>
+      <text x="508" y="180">a</text>
+      <text x="652" y="212">b</text>
+    </g>
+
+    <g fill="#999" font-size="14" text-anchor="middle" dominant-baseline="central">
+      <text x="60"  y="62">&#9312;</text>
+      <text x="230" y="62">&#9313;</text>
+      <text x="424" y="142">&#9314;</text>
+      <text x="398" y="288">&#9315;</text>
+      <text x="868" y="100">&#9316;</text>
+    </g>
+  </g>
+
+  <text x="24" y="380" font-size="12" fill="#888" text-anchor="start" dominant-baseline="central">&#9312;〜&#9316; は表で集合が出てきた順。二重丸は NFA の受理状態 f を含む集合で、コードの accept がこれにあたる</text>
+  <text x="24" y="402" font-size="12" fill="#888" text-anchor="start" dominant-baseline="central">i からは b の矢印が出ていない。遷移表にその行が無いということで、b を読んだ時点で不一致が決まる</text>
+  <text x="24" y="424" font-size="12" fill="#888" text-anchor="start" dominant-baseline="central">03 で手で作った図と同じものが、コードからそのまま出てくる</text>
+</svg>
