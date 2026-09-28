@@ -36,6 +36,18 @@ def move(nfa, states, sym):
     return frozenset(t for s in states for x, t in nfa.edges[s] if x == sym)
 ```
 
+コードの側から見ると、`closure` がやっているのは 2 つの入れ物の出し入れである。
+
+![closure のループが何をしているか](img/tool-closure-code.svg)
+
+`move` は逆に、ε を 1 本も辿らず、記号 1 つ分だけ進む。
+集合の中のどの状態から出ている矢印でも、記号が一致すればその行き先を集める。
+
+![move の動き](img/tool-move.svg)
+
+記号で 1 歩進んでから ε で広げる、つまり `closure(move(...))` が、
+次の `from_nfa` の 1 マスになる。
+
 作成手順の (1)〜(3) がそのまま `from_nfa` になる。
 未処理の集合を `todo` に積んでおき、空になったら終わり、というだけである。
 

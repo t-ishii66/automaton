@@ -94,6 +94,11 @@ class _Parser:
         return ("sym", c)
 ```
 
+`alt` `cat` `rep` はどれも同じ形をしている。まず一段強い規則を 1 回呼び、
+目印が続く限り、**それまでの node を左の子にして包み直す**。
+
+![4 つの関数の形と呼び出しの階段](img/tool-parse-rules.svg)
+
 `atom` が `alt` を呼び戻すので、関数も再帰する。
 この読み方を**再帰的下向き構文解析**という。
 
@@ -280,6 +285,10 @@ return _build(nfa, node[2], m)     後に来る方を m から作り、その到
         for s, out in self.edges.items():
             self.edges[s] = [(sym, keep if t == drop else t) for sym, t in out]
 ```
+
+この連結と付け替えが `edges` に何をするのかを、呼ぶ直前から順に追うとこうなる。
+
+![merge が edges にすること](img/tool-merge.svg)
 
 なお `drop` は枝を作り終えた直後の状態なので、そこから出ていく矢印はまだ 1 本も無い。
 つまり最初の連結は実際には何も動かさず、効いているのは後半の付け替えの方だけである

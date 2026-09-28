@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 496" width="980" height="496" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif">
+  <defs><marker id="d" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#444"/></marker><marker id="h" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker></defs>
+  <rect width="980" height="496" fill="#ffffff"/>
+  <text x="24" y="30" font-size="15" fill="#555" text-anchor="start" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">alt / cat / rep / atom</text>
+  <text x="268" y="31" font-size="13" fill="#888" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">— 4 つの規則が、そのまま 4 つの関数になる</text>
+  <line x1="24" y1="46" x2="956" y2="46" stroke="#eeeeee" stroke-width="1"/>
+  <line x1="612" y1="60" x2="612" y2="420" stroke="#eeeeee" stroke-width="1"/>
+  <text x="24" y="74" font-size="13" fill="#666" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="600">どれも同じ形をしている</text>
+  <text x="24" y="106" font-size="13" fill="#111" text-anchor="start" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">node = 一段強い規則()</text>
+  <text x="330" y="106" font-size="12" fill="#888" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">まず 1 つ読む</text>
+  <text x="24" y="132" font-size="13" fill="#111" text-anchor="start" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">while 目印が続く:</text>
+  <text x="330" y="132" font-size="12" fill="#888" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">目印は関数ごとに違う（右の表）</text>
+  <text x="55" y="158" font-size="13" fill="#111" text-anchor="start" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">node = (種類, node, 一段強い規則())</text>
+  <text x="338" y="184" font-size="12" fill="#888" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">それまでの node を丸ごと左の子にして包み直す</text>
+  <path d="M312,168 C334,170 328,178 334,182" fill="none" stroke="#b45309" stroke-width="1.6" marker-end="url(#h)"/>
+  <text x="24" y="184" font-size="13" fill="#111" text-anchor="start" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">return node</text>
+  <text x="24" y="222" font-size="13" fill="#666" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="600">cat が a (a|b)* b b を読むと、node はこう育つ</text>
+  <rect x="24" y="244.0" width="40" height="24" rx="6" fill="#ffffff" stroke="#cccccc" stroke-width="1.6"/>
+  <text x="44.0" y="256" font-size="13" fill="#111" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">a</text>
+  <text x="400" y="256" font-size="12" fill="#888" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">a を読んだ</text>
+  <rect x="24" y="276.0" width="158.4" height="40" rx="8" fill="#fffbeb" stroke="#b45309" stroke-width="1.6"/>
+  <text x="45.0" y="296" font-size="11" fill="#b45309" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">cat</text>
+  <rect x="64" y="284.0" width="40" height="24" rx="6" fill="#ffffff" stroke="#cccccc" stroke-width="1.6"/>
+  <text x="84.0" y="296" font-size="13" fill="#111" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">a</text>
+  <rect x="110" y="284.0" width="64.4" height="24" rx="6" fill="#fffbeb" stroke="#b45309" stroke-width="1.6"/>
+  <text x="142.2" y="296" font-size="13" fill="#111" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">(a|b)*</text>
+  <text x="400" y="296" font-size="12" fill="#888" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">(a|b)* を読んで包んだ</text>
+  <rect x="24" y="318.0" width="252.4" height="52" rx="8" fill="#fffbeb" stroke="#b45309" stroke-width="1.6"/>
+  <text x="45.0" y="344" font-size="11" fill="#b45309" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">cat</text>
+  <rect x="64" y="324.0" width="158.4" height="40" rx="8" fill="#ffffff" stroke="#dddddd" stroke-width="1.6"/>
+  <text x="85.0" y="344" font-size="11" fill="#999" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">cat</text>
+  <rect x="104" y="332.0" width="40" height="24" rx="6" fill="#ffffff" stroke="#cccccc" stroke-width="1.6"/>
+  <text x="124.0" y="344" font-size="13" fill="#111" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">a</text>
+  <rect x="150" y="332.0" width="64.4" height="24" rx="6" fill="#ffffff" stroke="#cccccc" stroke-width="1.6"/>
+  <text x="182.2" y="344" font-size="13" fill="#111" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">(a|b)*</text>
+  <rect x="228.4" y="332.0" width="40" height="24" rx="6" fill="#fffbeb" stroke="#b45309" stroke-width="1.6"/>
+  <text x="248.4" y="344" font-size="13" fill="#111" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">b</text>
+  <text x="400" y="344" font-size="12" fill="#888" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">b を読んで包んだ</text>
+  <rect x="24" y="372.0" width="346.4" height="64" rx="8" fill="#fffbeb" stroke="#b45309" stroke-width="1.6"/>
+  <text x="45.0" y="404" font-size="11" fill="#b45309" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">cat</text>
+  <rect x="64" y="378.0" width="252.4" height="52" rx="8" fill="#ffffff" stroke="#dddddd" stroke-width="1.6"/>
+  <text x="85.0" y="404" font-size="11" fill="#999" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">cat</text>
+  <rect x="104" y="384.0" width="158.4" height="40" rx="8" fill="#ffffff" stroke="#dddddd" stroke-width="1.6"/>
+  <text x="125.0" y="404" font-size="11" fill="#999" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">cat</text>
+  <rect x="144" y="392.0" width="40" height="24" rx="6" fill="#ffffff" stroke="#cccccc" stroke-width="1.6"/>
+  <text x="164.0" y="404" font-size="13" fill="#111" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">a</text>
+  <rect x="190" y="392.0" width="64.4" height="24" rx="6" fill="#ffffff" stroke="#cccccc" stroke-width="1.6"/>
+  <text x="222.2" y="404" font-size="13" fill="#111" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">(a|b)*</text>
+  <rect x="268.4" y="392.0" width="40" height="24" rx="6" fill="#ffffff" stroke="#cccccc" stroke-width="1.6"/>
+  <text x="288.4" y="404" font-size="13" fill="#111" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">b</text>
+  <rect x="322.4" y="392.0" width="40" height="24" rx="6" fill="#fffbeb" stroke="#b45309" stroke-width="1.6"/>
+  <text x="342.4" y="404" font-size="13" fill="#111" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">b</text>
+  <text x="400" y="404" font-size="12" fill="#888" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">b を読んで包んだ</text>
+  <text x="644" y="74" font-size="13" fill="#666" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="600">呼び出しの階段</text>
+  <rect x="644" y="100" width="288" height="52" rx="7" fill="#ffffff" stroke="#bbbbbb" stroke-width="1.6"/>
+  <text x="660" y="118" font-size="13" fill="#111" text-anchor="start" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">alt</text>
+  <text x="720" y="118" font-size="12" fill="#333" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">| が来たら包む</text>
+  <text x="660" y="138" font-size="11" fill="#888" text-anchor="start" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">(&#39;alt&#39;, node, cat())</text>
+  <rect x="644" y="174" width="288" height="52" rx="7" fill="#ffffff" stroke="#bbbbbb" stroke-width="1.6"/>
+  <text x="660" y="192" font-size="13" fill="#111" text-anchor="start" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">cat</text>
+  <text x="720" y="192" font-size="12" fill="#333" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">終端・| ・) 以外が続けば包む</text>
+  <text x="660" y="212" font-size="11" fill="#888" text-anchor="start" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">(&#39;cat&#39;, node, rep())</text>
+  <rect x="644" y="248" width="288" height="52" rx="7" fill="#ffffff" stroke="#bbbbbb" stroke-width="1.6"/>
+  <text x="660" y="266" font-size="13" fill="#111" text-anchor="start" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">rep</text>
+  <text x="720" y="266" font-size="12" fill="#333" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">* が来たら包む</text>
+  <text x="660" y="286" font-size="11" fill="#888" text-anchor="start" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">(&#39;star&#39;, node)</text>
+  <rect x="644" y="322" width="288" height="52" rx="7" fill="#ffffff" stroke="#bbbbbb" stroke-width="1.6"/>
+  <text x="660" y="340" font-size="13" fill="#111" text-anchor="start" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">atom</text>
+  <text x="720" y="340" font-size="12" fill="#333" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">1 文字取る。( なら alt へ</text>
+  <text x="660" y="360" font-size="11" fill="#888" text-anchor="start" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">(&#39;sym&#39;, c)</text>
+  <path d="M704,154 L704,170" fill="none" stroke="#444" stroke-width="1.6" marker-end="url(#d)"/>
+  <path d="M704,228 L704,244" fill="none" stroke="#444" stroke-width="1.6" marker-end="url(#d)"/>
+  <path d="M704,302 L704,318" fill="none" stroke="#444" stroke-width="1.6" marker-end="url(#d)"/>
+  <text x="720" y="162" font-size="11" fill="#888" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">まず一段強い方を呼ぶ</text>
+  <text x="628" y="126" font-size="12" fill="#888" text-anchor="end" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">弱</text>
+  <text x="628" y="348" font-size="12" fill="#888" text-anchor="end" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">強</text>
+  <line x1="628" y1="140" x2="628" y2="334" stroke="#e5e5e5" stroke-width="1"/>
+  <path d="M932,348 C954,344 954,140 936,120" fill="none" stroke="#b45309" stroke-width="1.6" marker-end="url(#h)"/>
+  <text x="644" y="394" font-size="12" fill="#888" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">( の中身は alt から読み直す。</text>
+  <text x="644" y="414" font-size="12" fill="#888" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">ここで関数が再帰し、入れ子が一段深くなる</text>
+  <text x="24" y="452" font-size="12" fill="#888" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">選択と連接は、読むたびに「それまで」を左の子にして包むので、node は左へ伸びる（この後の木で cat が 3 つ並ぶのはこのため）</text>
+  <text x="24" y="474" font-size="12" fill="#888" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">rep だけは子が 1 つなので (&#39;star&#39;, node) と包む。atom は包まず、1 文字を (&#39;sym&#39;, c) にして返す</text>
+  </svg>
