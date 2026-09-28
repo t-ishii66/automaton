@@ -4,11 +4,11 @@ Recursive descent over this grammar -- the same style as the LL(1) appendix:
 
     alt  -> cat { '|' cat }
     cat  -> rep { rep }
-    rep  -> atom { '*' }
+    rep  -> atom { '*' | '?' }
     atom -> '(' alt ')' | CHAR
 
 The result is an AST of nested tuples:
-    ('sym', c) ('cat', x, y) ('alt', x, y) ('star', x)
+    ('sym', c) ('cat', x, y) ('alt', x, y) ('star', x) ('opt', x)
 """
 
 
@@ -42,9 +42,8 @@ class _Parser:
 
     def rep(self):
         node = self.atom()
-        while self.peek() == "*":
-            self.take()
-            node = ("star", node)
+        while self.peek() in ("*", "?"):
+            node = ("star" if self.take() == "*" else "opt", node)
         return node
 
     def atom(self):
@@ -54,7 +53,7 @@ class _Parser:
             if self.take() != ")":
                 raise ValueError("')' expected")
             return node
-        if c in "|*)":
+        if c in "|*?)":
             raise ValueError(f"unexpected {c!r}")
         return ("sym", c)
 

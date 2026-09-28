@@ -46,6 +46,10 @@ def _build(nfa, node, s):
         right = _build(nfa, node[2], s)
         nfa.merge(left, right)  # both branches end in the same state
         return left
+    if kind == "opt":
+        end = _build(nfa, node[1], s)
+        nfa.add(s, EPS, end)     # skip the body entirely
+        return end
     if kind == "star":
         body = nfa.state()
         nfa.add(s, EPS, body)

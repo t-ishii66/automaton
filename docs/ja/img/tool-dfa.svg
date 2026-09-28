@@ -62,5 +62,5 @@
 
   <text x="24" y="380" font-size="12" fill="#888" text-anchor="start" dominant-baseline="central">&#9312;〜&#9316; は表で集合が出てきた順。二重丸は NFA の受理状態 f を含む集合で、コードの accept がこれにあたる</text>
   <text x="24" y="402" font-size="12" fill="#888" text-anchor="start" dominant-baseline="central">i からは b の矢印が出ていない。遷移表にその行が無いということで、b を読んだ時点で不一致が決まる</text>
-  <text x="24" y="424" font-size="12" fill="#888" text-anchor="start" dominant-baseline="central">03 で手で作った図と同じものが、コードからそのまま出てくる</text>
+  <text x="24" y="424" font-size="12" fill="#888" text-anchor="start" dominant-baseline="central">03 章で手で作った図と同じものが、コードからそのまま出てくる</text>
 </svg>

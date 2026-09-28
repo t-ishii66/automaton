@@ -2,9 +2,10 @@
 
 ![分かれ道の目印を見て道を選ぶBobとAlice、草むらのウサギ](img/alice-bob-06-parse-nfa.png)
 
-[05](05-subset.md) で決めた範囲の正規表現を受け取り、NFA にするところまでを作る。
+[05 章](05-subset.md) で決めた範囲の正規表現を受け取り、NFA にするところまでを作る。
 やることは 2 つ、パターンを読んで構造を取り出すことと、
-[02](02-regex-to-nfa.md) の 4 つの規則を当てはめることである。
+[02 章](02-regex-to-nfa.md) の 4 つの規則（と、[05 章](05-subset.md) で足した 5 つめ）を
+当てはめることである。
 
 ## 1. パターンを読む
 
@@ -20,12 +21,12 @@
 ```
 alt  -> cat { '|' cat }      選択      : 連接を | で並べたもの
 cat  -> rep { rep }          連接      : 繰り返しを並べたもの
-rep  -> atom { '*' }         繰り返し  : 要素に * が付いたもの
+rep  -> atom { '*' | '?' }   繰り返し  : 要素に * や ? が付いたもの
 atom -> '(' alt ')' | 文字   要素      : 括弧でくくった選択、または 1 文字
 ```
 
 `->` は「左辺はこういう形をしている」、`{ }` は 0 回以上の繰り返しを表す。
-引用符付きの `'|'` `'*'` `'('` は正規表現に現れる文字そのもので、
+引用符付きの `'|'` `'*'` `'?'` `'('` は正規表現に現れる文字そのもので、
 引用符の無い `|`（`atom` の行）は規則の側の「または」である。
 
 弱い規則が強い規則を呼ぶ形になっているので、上から順に読んでいけば
@@ -62,9 +63,9 @@ class _Parser:
 ### 規則が作るもの — node
 
 規則が作るのは **node** と呼ぶ小さなタプルで、
-先頭が種類の名前、残りが子である。種類は規則と同じ 4 つしかない。
+先頭が種類の名前、残りが子である。種類は 5 つしかない。
 
-![node の 4 種類](img/tool-node-kinds.svg)
+![node の 5 種類](img/tool-node-kinds.svg)
 
 子のところにはまた node が入る。だから node は木になる。
 `('star', ('alt', ('sym', 'a'), ('sym', 'b')))` なら、
@@ -72,7 +73,7 @@ class _Parser:
 
 ### 規則を関数にする
 
-4 つの規則は、そのまま 4 つの関数になる。どの関数も、返すのは node である。
+文法の 4 つの規則は、そのまま 4 つの関数になる。どの関数も、返すのは node である。
 
 ```python
     def alt(self):
@@ -90,9 +91,8 @@ class _Parser:
 
     def rep(self):
         node = self.atom()
-        while self.peek() == "*":
-            self.take()
-            node = ("star", node)
+        while self.peek() in ("*", "?"):
+            node = ("star" if self.take() == "*" else "opt", node)
         return node
 
     def atom(self):
@@ -102,7 +102,7 @@ class _Parser:
             if self.take() != ")":
                 raise ValueError("')' expected")
             return node
-        if c in "|*)":
+        if c in "|*?)":
             raise ValueError(f"unexpected {c!r}")
         return ("sym", c)
 ```
@@ -137,7 +137,8 @@ class _Parser:
 
 ## 2. NFA を作る
 
-[02](02-regex-to-nfa.md) の 4 つの規則を、読み取った node の木にあてはめる。
+[02 章](02-regex-to-nfa.md) で見た 4 つの規則（と、このあと足す 5 つめ）を、
+読み取った node の木にあてはめる。
 
 組み立て先の `NFA` は、状態と遷移を溜めておくだけの入れ物である。
 `state()` で状態を 1 つ増やし、`add()` で矢印を 1 本足す。
@@ -217,6 +218,10 @@ def _build(nfa, node, s):
         right = _build(nfa, node[2], s)
         nfa.merge(left, right)  # both branches end in the same state
         return left
+    if kind == "opt":
+        end = _build(nfa, node[1], s)
+        nfa.add(s, EPS, end)     # skip the body entirely
+        return end
     if kind == "star":
         body = nfa.state()
         nfa.add(s, EPS, body)
@@ -255,9 +260,9 @@ return _build(nfa, node[2], m)     後に来る方を m から作り、その到
 `ab` 全体の終わりとして呼び出し元に返る。
 どの規則も「作り終えて到達した状態を返す」ので、部品をいくつ繋いでも同じように書ける。
 
-4 つの規則が `edges` に対して何をするのかを並べると、次のようになる。
+5 つの規則が `edges` に対して何をするのかを並べると、次のようになる。
 
-![4 つの規則と edges の変化](img/tool-build-edges.svg)
+![5 つの規則と edges の変化](img/tool-build-edges.svg)
 
 見どころは 3 つある。
 
@@ -272,14 +277,42 @@ return _build(nfa, node[2], m)     後に来る方を m から作り、その到
 図の `b` の矢印が `right` から `left` へ付け替わっているのがそれにあたる。
 矢印の本数は変わらない。
 
-**ε を足すのは④だけである。** `edges[s]` に 2 本（入る・飛ばす）、
+**ε を足すのは④である。** `edges[s]` に 2 本（入る・飛ばす）、
 本体の終わりの行に 2 本（戻る・抜ける）で、合わせて 4 本。
 02 で見た ε 4 本が、ここでは `(EPS, 行き先)` という 4 つの要素として現れる。
 
 つまり `edges` が実際に増えるのは、**記号 1 文字につき矢印 1 本**（①）と、
-**繰り返し 1 つにつき ε 4 本**（④）だけである。
+**繰り返し 1 つにつき ε 4 本**（④）である。
 `a(a|b)*bb` なら記号が 5 つ、繰り返しが 1 つなので、5 + 4 = 9 本。
-[02](02-regex-to-nfa.md) で数えた 9 本と合う。
+[02 章](02-regex-to-nfa.md) で数えた 9 本と合う。
+
+このあと足す⑤も ε を 1 本だけ増やす。②と③は最後まで何も足さない。
+
+### ⑤ 省略 `x?`
+
+[05 章](05-subset.md) で足すことにした `?` が、`opt` の 3 行である。
+
+![⑤ 省略の構成規則](img/06-opt.svg)
+
+本体を `s` から作って `end` に着いたら、`s` から `end` へ ε を 1 本引く。
+それが「本体を飛ばす」道になる。新しい状態は 1 つも作らない。
+
+```python
+    if kind == "opt":
+        end = _build(nfa, node[1], s)
+        nfa.add(s, EPS, end)     # skip the body entirely
+        return end
+```
+
+`ab?` を作ると、`1` から `f` へ `b` の矢印と ε の矢印が並ぶ。
+
+```python
+>>> from automaton.nfa import build, dump
+>>> dump(build("ab?"))
+ i -- a --> 1
+ 1 -- b --> f
+ 1 -- ε --> f
+```
 
 ③で使う `merge` は、状態 `drop` を状態 `keep` に統合する。
 `_build` からは `merge(left, right)` と呼ばれるので、`keep` が `left`、`drop` が `right` である。
@@ -321,9 +354,9 @@ return _build(nfa, node[2], m)     後に来る方を m から作り、その到
  5 -- b --> f
 ```
 
-[02](02-regex-to-nfa.md) で手で組み立てた 9 本と、辺も状態の名前も一致している。
+[02 章](02-regex-to-nfa.md) で手で組み立てた 9 本と、辺も状態の名前も一致している。
 
 ---
 
 ここまでで、どんなパターンからでも NFA が作れるようになった。
-[07](07-dfa-match.md) では、これを DFA に変えて一致判定まで持っていく。
+[07 章](07-dfa-match.md) では、これを DFA に変えて一致判定まで持っていく。

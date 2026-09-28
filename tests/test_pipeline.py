@@ -65,7 +65,8 @@ def test_same_answers_as_the_regex_module():
 
 
 def test_other_patterns():
-    for pattern in ["a", "ab", "a*", "(a|b)*", "a|bb", "(ab)*a", "a(b|c)*d"]:
+    for pattern in ["a", "ab", "a*", "(a|b)*", "a|bb", "(ab)*a", "a(b|c)*d",
+                    "a?", "ab?", "a?b?", "(ab)?", "(a|b)?c", "a?a?a?", "(a?b)*"]:
         dfa = minimize(rename(from_nfa(build(pattern))))
         for n in range(6):
             for text in ("".join(t) for t in product("abcd", repeat=n)):
