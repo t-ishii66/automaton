@@ -1,5 +1,7 @@
 # 07. DFA にして判定する
 
+![完成した仕分け機にカードを通し、結果を喜ぶBobとAlice](img/alice-bob-07-dfa-match.png)
+
 [06](06-parse-nfa.md) でパターンから NFA を作った。
 ここからは [03](03-nfa-to-dfa.md)、[04](04-minimize.md) の手順をコードにして、
 最後にコマンドとして繋ぐ。
