@@ -48,6 +48,6 @@
   <text x="218" y="566" font-size="13" fill="#666" text-anchor="middle">x が 0 回か 1 回（あってもなくてもよい）</text>
   <text x="470" y="470" font-size="13" fill="#888">破線は別の node が入るところ。</text>
   <text x="470" y="494" font-size="13" fill="#888">灰色の枠は node ではなく文字そのもの</text>
-  <text x="470" y="530" font-size="13" fill="#888">opt は 05 章で足した 5 つめ。</text>
+  <text x="470" y="530" font-size="13" fill="#888">opt は 05 章で足した ? にあたる。</text>
   <text x="470" y="554" font-size="13" fill="#888">star と同じく子は 1 つだが、繰り返さない</text>
 </svg>
