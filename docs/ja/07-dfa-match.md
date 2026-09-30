@@ -1,3 +1,8 @@
+---
+title: "07. DFA にして判定する"
+lang: ja
+---
+
 # 07. DFA にして判定する
 
 ![完成した仕分け機にカードを通し、結果を喜ぶBobとAlice](img/alice-bob-07-dfa-match.png)

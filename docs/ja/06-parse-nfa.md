@@ -1,3 +1,8 @@
+---
+title: "06. パターンを読んで NFA にする"
+lang: ja
+---
+
 # 06. パターンを読んで NFA にする
 
 ![分かれ道の目印を見て道を選ぶBobとAlice、草むらのウサギ](img/alice-bob-06-parse-nfa.png)

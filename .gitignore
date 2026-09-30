@@ -24,6 +24,13 @@ service-account*.json
 *.key
 id_rsa*
 
-# Claude Code local state (per-machine settings and worktree checkouts)
-.claude/settings.local.json
-.claude/worktrees/
+# Claude Code local state (per-machine settings, worktree checkouts)
+.claude/
+
+# Test runner cache
+.pytest_cache/
+
+# Jekyll (GitHub Pages)
+_site/
+.jekyll-cache/
+.jekyll-metadata

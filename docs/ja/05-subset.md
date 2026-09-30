@@ -1,3 +1,8 @@
+---
+title: "05. 扱う正規表現を決める"
+lang: ja
+---
+
 # 05. 扱う正規表現を決める
 
 ![室内の工作机で材料を選び、道具箱に詰めるAliceとBob](img/alice-bob-05-subset.png)

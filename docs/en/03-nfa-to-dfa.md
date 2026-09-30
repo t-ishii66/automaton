@@ -1,3 +1,8 @@
+---
+title: "03. Converting an NFA into a DFA"
+lang: en
+---
+
 # 03. Converting an NFA into a DFA
 
 ![Bob and Alice checking the way on a park map, a small bird perched on a branch](../ja/img/alice-bob-03-nfa-to-dfa.png)

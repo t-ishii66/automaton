@@ -1,3 +1,8 @@
+---
+title: "06. Reading a Pattern and Turning It into an NFA"
+lang: en
+---
+
 # 06. Reading a Pattern and Turning It into an NFA
 
 ![Bob and Alice reading the markers at a fork and choosing a road, a rabbit in the grass](../ja/img/alice-bob-06-parse-nfa.png)

@@ -1,3 +1,8 @@
+---
+title: "02. Building an NFA from a Regular Expression"
+lang: en
+---
+
 # 02. Building an NFA from a Regular Expression
 
 ![Bob and Alice assembling a wooden railway, a squirrel looking on](../ja/img/alice-bob-02-regex-to-nfa.png)

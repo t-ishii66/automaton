@@ -1,3 +1,8 @@
+---
+title: "03. NFA を DFA に変換する"
+lang: ja
+---
+
 # 03. NFA を DFA に変換する
 
 ![公園の地図で道を確かめるBobとAlice、枝にとまる小鳥](img/alice-bob-03-nfa-to-dfa.png)

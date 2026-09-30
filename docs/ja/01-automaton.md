@@ -1,3 +1,8 @@
+---
+title: "01. オートマトンとは"
+lang: ja
+---
+
 # 01. オートマトンとは
 
 ![小川の飛び石を渡るBobとAlice、岸辺のウサギ](img/alice-bob-01-automaton.png)

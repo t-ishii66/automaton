@@ -1,3 +1,8 @@
+---
+title: "07. Turning It into a DFA and Deciding Matches"
+lang: en
+---
+
 # 07. Turning It into a DFA and Deciding Matches
 
 ![Bob and Alice running cards through the finished sorting machine, delighted at the result](../ja/img/alice-bob-07-dfa-match.png)

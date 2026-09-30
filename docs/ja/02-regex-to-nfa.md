@@ -1,3 +1,8 @@
+---
+title: "02. 正規表現から NFA を作る"
+lang: ja
+---
+
 # 02. 正規表現から NFA を作る
 
 ![木製レールを組み立てるBobとAlice、見守るリス](img/alice-bob-02-regex-to-nfa.png)

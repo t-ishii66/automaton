@@ -1,3 +1,8 @@
+---
+title: "05. Deciding Which Regular Expressions We Handle"
+lang: en
+---
+
 # 05. Deciding Which Regular Expressions We Handle
 
 ![Alice and Bob choosing materials at an indoor workbench and packing a toolbox](../ja/img/alice-bob-05-subset.png)

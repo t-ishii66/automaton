@@ -1,3 +1,8 @@
+---
+title: "04. 状態数を最小化する"
+lang: ja
+---
+
 # 04. 状態数を最小化する
 
 ![葉や木の実を整理するBobとAlice、そばにいるシマリス](img/alice-bob-04-minimize.png)

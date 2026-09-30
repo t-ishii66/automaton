@@ -1,3 +1,8 @@
+---
+title: "04. Minimizing the Number of States"
+lang: en
+---
+
 # 04. Minimizing the Number of States
 
 ![Bob and Alice sorting leaves and nuts, a chipmunk beside them](../ja/img/alice-bob-04-minimize.png)

@@ -1,0 +1,45 @@
+title: "Automata — How Regular Expressions Work"
+description: >-
+  A teaching repository that builds a regular expression engine from scratch:
+  regular expression → NFA → DFA → state minimization → matching. Chapters 01-04
+  work the whole pipeline by hand with drawn state diagrams; chapters 05-07 turn
+  the same steps into a small Python implementation with no external dependencies.
+  For engineers who use regular expressions but have never looked inside an engine.
+
+url: "https://t-ishii66.github.io"
+baseurl: "/automaton"
+repository: t-ishii66/automaton
+
+theme: jekyll-theme-cayman
+
+author: t-ishii66
+lang: en
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-relative-links
+
+relative_links:
+  enabled: true
+  collections: false
+
+exclude:
+  - "*.bak"
+  - PROBLEMS.md
+  - "*PROBLEMS*.md"
+  - Makefile
+  - build/
+  - dist/
+  - target/
+  - node_modules/
+  - .vscode/
+  - "*.o"
+  - "*.so"
+  - "*.dylib"
+  - "*.exe"
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge

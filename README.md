@@ -1,3 +1,10 @@
+---
+title: "Automata — How Regular Expressions Work"
+description: "Build a regular expression engine from scratch: regex to NFA, subset construction to DFA, state minimization, and matching — drawn, worked by hand, then written in Python."
+keywords: "automata, finite automaton, NFA, DFA, nondeterministic finite automaton, deterministic finite automaton, regular expression, regex engine, how regex works, Thompson construction, subset construction, powerset construction, DFA minimization, epsilon closure, epsilon transition, state machine, transition table, recursive descent parser, parsing, lexical analysis, compiler, formal languages, pattern matching, Python, from scratch, build your own, tutorial, teaching material, documentation, open source, GitHub, automaton"
+permalink: /
+---
+
 # Automata — How Regular Expressions Work
 
 [日本語](README-jp.md)
@@ -6,6 +13,19 @@
 
 Regular expressions are used in every kind of situation.
 But when it comes to "what is going on inside", a somewhat specialized theory called automata shows its face.
+
+<!-- SEO intro added by setup-github-pages; review and adjust -->
+
+If you have ever wanted to know **how a regex engine works** on the inside — to
+build your own **regular expression engine** from scratch, to see how an **NFA**
+and a **DFA** fit together, or to learn **Thompson's construction**, the
+**subset construction** and **DFA minimization** by working through one small but
+real example — this is for you. Every step is drawn as a state diagram and worked
+by hand first, then written as a **Python** implementation with no external
+dependencies: a **recursive descent parser**, **epsilon closure**, the transition
+table, and matching a string in a single left-to-right pass with no backtracking.
+
+<!-- /SEO intro -->
 
 So here, we narrow regular expressions down to a boldly small subset,
 and implement a tool that processes it in the simplest possible form.

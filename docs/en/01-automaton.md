@@ -1,3 +1,8 @@
+---
+title: "01. What a Finite Automaton Is"
+lang: en
+---
+
 # 01. What a Finite Automaton Is
 
 ![Bob and Alice crossing a brook on stepping stones, a rabbit on the bank](../ja/img/alice-bob-01-automaton.png)
