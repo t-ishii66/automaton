@@ -46,7 +46,6 @@ automaton/
 ├── CLAUDE.md
 ├── README-jp.md              概要と読み方の入口
 ├── docs/ja/                  解説本体（日本語）
-│   ├── index.md              目次
 │   ├── 01-automaton.md       オートマトンとは / DFA の定義（ε 遷移なし・同記号での分岐なし）
 │   ├── 02-regex-to-nfa.md    正規表現 → NFA（Thompson 構成）
 │   ├── 03-nfa-to-dfa.md      ε 閉包と部分集合構成
@@ -57,7 +56,7 @@ automaton/
 │   └── img/                  状態遷移図（手書き SVG）
 ├── automaton/                実装（Python パッケージ。リポジトリ直下に置く）
 │   ├── regex.py              正規表現パーサ（AST 構築）
-│   ├── nfa.py                4 つの構成規則で正規表現 → NFA
+│   ├── nfa.py                5 つの構成規則で正規表現 → NFA
 │   ├── dfa.py                ε 閉包 / 部分集合構成 / 最小化 / マッチ
 │   └── __main__.py           コマンドラインの入口（python3 -m automaton）
 └── tests/                    pytest（pytest 無しでも実行できるよう素の assert で書く）
