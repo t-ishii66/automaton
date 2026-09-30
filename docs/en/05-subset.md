@@ -50,7 +50,7 @@ This is what was touched on in [Chapter 02](02-regex-to-nfa.md) as "it can be ad
 It is enough to add, as a 5th to the 4 rules we saw in [Chapter 02](02-regex-to-nfa.md),
 "make the body, and draw one ε from its entrance to its exit".
 
-![The machine for ab?c, and the 2 roads that ? provides](../ja/img/05-opt-meaning.svg)
+![The machine for ab?c, and the 2 roads that ? provides](img/05-opt-meaning.svg)
 
 Going through the `b` arrow gives `abc`; skipping it with the ε arrow gives `ac`.
 Whichever road we take we arrive at `2`, so everything beyond that is the same.
@@ -78,7 +78,7 @@ Read the pattern, build an NFA, turn it into a DFA, reduce the number of states,
 
 ## The Overall Flow
 
-![The flow of the tool's processing](../ja/img/tool-pipeline.svg)
+![The flow of the tool's processing](img/tool-pipeline.svg)
 
 The procedure we saw in Chapters 01 through 04 becomes, one at a time, exactly one part each.
 

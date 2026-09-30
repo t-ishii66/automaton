@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 400" width="940" height="400" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="a1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#444"/>
+    </marker>
+  </defs>
+  <rect width="940" height="400" fill="#ffffff"/>
+  <text x="24" y="30" font-size="14" fill="#333" text-anchor="start" dominant-baseline="central" font-weight="600">The DFA once the merging is done: 4 states</text>
+  <line x1="24" y1="48" x2="916" y2="48" stroke="#eeeeee" stroke-width="1"/>
+  <line x1="600" y1="66" x2="600" y2="344" stroke="#eeeeee" stroke-width="1"/>
+
+  <g transform="translate(20,64)">
+    <g fill="none" stroke="#444" stroke-width="1.8" marker-end="url(#a1)">
+      <path d="M30,110 L48,110"/>
+      <path d="M94,110 L236,110"/>
+      <path d="M246,91 C226,38 298,38 278,89"/>
+      <path d="M506,85 C486,30 554,30 534,83"/>
+      <path d="M491,110 L286,110"/>
+      <path d="M267,136 L365,243"/>
+      <path d="M385,224 L287,117"/>
+      <path d="M405,234 L503,129"/>
+    </g>
+
+    <g fill="#ffffff" stroke="#333" stroke-width="1.8">
+      <circle cx="72"  cy="110" r="22"/>
+      <circle cx="262" cy="110" r="22"/>
+      <circle cx="390" cy="250" r="22"/>
+      <circle cx="520" cy="110" r="27"/>
+      <circle cx="520" cy="110" r="22"/>
+    </g>
+
+    <g fill="#111" font-size="15" text-anchor="middle" dominant-baseline="central">
+      <text x="72"  y="110">i</text>
+      <text x="262" y="110">1,2</text>
+      <text x="390" y="250">3</text>
+      <text x="520" y="110">f</text>
+    </g>
+
+    <g fill="#444" font-size="15" text-anchor="middle" font-weight="600">
+      <text x="165" y="98">a</text>
+      <text x="262" y="32">a</text>
+      <text x="520" y="24">b</text>
+      <text x="388" y="98">a</text>
+      <text x="292" y="209">b</text>
+      <text x="360" y="166">a</text>
+      <text x="472" y="200">b</text>
+    </g>
+  </g>
+
+  <g font-size="12" fill="#888" text-anchor="start" dominant-baseline="central">
+    <text x="624" y="104">1,2 is the 1,2,4 and 2,3,4 of the previous</text>
+    <text x="624" y="126">figure brought into one. 5 states became 4</text>
+    <text x="624" y="170">The names in the circles are the DFA names</text>
+    <text x="624" y="192">rename gave, not sets of NFA states like</text>
+    <text x="624" y="214">the 2,3,4 of the previous figure</text>
+    <text x="624" y="258">Still no b arrow out of i.</text>
+    <text x="624" y="280">That “nowhere to go” is why i split off</text>
+    <text x="624" y="324">Same as the figure drawn by hand in chapter 04</text>
+  </g>
+</svg>

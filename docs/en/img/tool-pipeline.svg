@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 540" width="560" height="540" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="a1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#444"/>
+    </marker>
+  </defs>
+  <rect width="560" height="540" fill="#ffffff"/>
+  <g fill="none" stroke="#444" stroke-width="1.8" marker-end="url(#a1)">
+    <path d="M170,64 L170,106"/>
+    <path d="M170,154 L170,196"/>
+    <path d="M170,244 L170,286"/>
+    <path d="M170,334 L170,376"/>
+    <path d="M170,424 L170,466"/>
+  </g>
+  <g fill="#ffffff" stroke="#333" stroke-width="1.8">
+    <rect x="40" y="20" width="260" height="44" rx="8"/>
+    <rect x="40" y="110" width="260" height="44" rx="8"/>
+    <rect x="40" y="200" width="260" height="44" rx="8"/>
+    <rect x="40" y="290" width="260" height="44" rx="8"/>
+    <rect x="40" y="380" width="260" height="44" rx="8"/>
+    <rect x="40" y="470" width="260" height="44" rx="8"/>
+  </g>
+  <g text-anchor="middle" dominant-baseline="central">
+    <text x="170" y="36" font-size="15" fill="#111">regular expression</text>
+    <text x="170" y="52" font-size="13" fill="#888">a(a|b)*bb</text>
+    <text x="170" y="132" font-size="15" fill="#111">structure (nested)</text>
+    <text x="170" y="216" font-size="15" fill="#111">NFA</text>
+    <text x="170" y="232" font-size="13" fill="#888">7 states</text>
+    <text x="170" y="306" font-size="15" fill="#111">DFA</text>
+    <text x="170" y="322" font-size="13" fill="#888">5 states</text>
+    <text x="170" y="396" font-size="15" fill="#111">minimal DFA</text>
+    <text x="170" y="412" font-size="13" fill="#888">4 states</text>
+    <text x="170" y="492" font-size="15" fill="#111">match / no match</text>
+  </g>
+  <g text-anchor="start" dominant-baseline="central" font-size="13" fill="#666">
+    <text x="324" y="85">read (4 levels of binding)</text>
+    <text x="324" y="175">apply the 4 rules (02)</text>
+    <text x="324" y="265">ε closure + subsets (03)</text>
+    <text x="324" y="355">split again and again (04)</text>
+    <text x="324" y="445">one table lookup per character</text>
+  </g>
+</svg>

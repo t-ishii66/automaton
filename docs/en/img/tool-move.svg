@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 592" width="980" height="592" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif">
+  <defs><marker id="d" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#444"/></marker><marker id="h" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker><marker id="o" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c2410c"/></marker><marker id="g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#bbbbbb"/></marker></defs>
+  <rect width="980" height="592" fill="#ffffff"/>
+  <text x="24" y="30" font-size="15" fill="#555" text-anchor="start" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">move(nfa, states, sym)</text>
+  <text x="254" y="31" font-size="13" fill="#888" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">— move on by one symbol. ε is not followed</text>
+  <line x1="24" y1="46" x2="956" y2="46" stroke="#eeeeee" stroke-width="1"/>
+  <line x1="600" y1="62" x2="600" y2="330" stroke="#eeeeee" stroke-width="1"/>
+  <text x="24" y="76" font-size="13" fill="#666" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="600">Reading the expression in pieces</text>
+  <text x="24" y="106" font-size="13" fill="#111" text-anchor="start" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">frozenset(t for s in states for x, t in nfa.edges[s] if x == sym)</text>
+  <text x="24" y="130" font-size="12" fill="#888" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">It is packed into one line, so open it out vertically</text>
+  <text x="24" y="166" font-size="13" fill="#111" text-anchor="start" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">frozenset(</text>
+  <text x="55" y="196" font-size="13" fill="#111" text-anchor="start" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">t</text>
+  <text x="300" y="196" font-size="12" fill="#888" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">this is what is collected: where the arrow goes</text>
+  <text x="55" y="226" font-size="13" fill="#111" text-anchor="start" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">for s in states</text>
+  <text x="300" y="226" font-size="12" fill="#888" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">each state in the set, one at a time</text>
+  <text x="55" y="256" font-size="13" fill="#111" text-anchor="start" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">for x, t in nfa.edges[s]</text>
+  <text x="300" y="256" font-size="12" fill="#888" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">each arrow leaving that state, one at a time</text>
+  <text x="55" y="286" font-size="13" fill="#b45309" text-anchor="start" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">if x == sym</text>
+  <text x="300" y="286" font-size="12" fill="#888" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">only the ones whose symbol matches</text>
+  <text x="24" y="316" font-size="13" fill="#111" text-anchor="start" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">)</text>
+  <text x="300" y="306" font-size="12" fill="#888" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">for ε, x is None, so it drops out here</text>
+  <text x="620" y="76" font-size="13" fill="#666" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="600">In the figure</text>
+  <text x="620" y="106" font-size="12" fill="#888" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">from states = {1, 2, 4}, take only the sym = b arrows</text>
+  <ellipse cx="664" cy="152" rx="18" ry="15" fill="#ffffff" stroke="#999" stroke-width="1.4"/>
+  <text x="664" y="152" font-size="12" fill="#999" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">2</text>
+  <ellipse cx="824" cy="152" rx="18" ry="15" fill="#ffffff" stroke="#111" stroke-width="1.8"/>
+  <text x="824" y="152" font-size="12" fill="#111" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">3</text>
+  <path d="M682,152 L800,152" fill="none" stroke="#b45309" stroke-width="1.6" marker-end="url(#h)"/>
+  <text x="742" y="132" font-size="13" fill="#b45309" text-anchor="middle" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="600">b</text>
+  <ellipse cx="664" cy="218" rx="18" ry="15" fill="#ffffff" stroke="#999" stroke-width="1.4"/>
+  <text x="664" y="218" font-size="12" fill="#999" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">4</text>
+  <ellipse cx="824" cy="218" rx="18" ry="15" fill="#ffffff" stroke="#111" stroke-width="1.8"/>
+  <text x="824" y="218" font-size="12" fill="#111" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">5</text>
+  <path d="M682,218 L800,218" fill="none" stroke="#b45309" stroke-width="1.6" marker-end="url(#h)"/>
+  <text x="742" y="198" font-size="13" fill="#b45309" text-anchor="middle" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="600">b</text>
+  <ellipse cx="664" cy="284" rx="18" ry="15" fill="#ffffff" stroke="#dddddd" stroke-width="1.4"/>
+  <text x="664" y="284" font-size="12" fill="#bbbbbb" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">1</text>
+  <text x="692" y="284" font-size="12" fill="#888" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">has only ε leaving it</text>
+  <text x="864" y="185" font-size="13" fill="#111" text-anchor="start" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">= {3, 5}</text>
+  <line x1="24" y1="346" x2="956" y2="346" stroke="#eeeeee" stroke-width="1"/>
+  <text x="24" y="374" font-size="13" fill="#666" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="600">Following move(nfa, {1,2,4}, &#39;b&#39;)</text>
+  <text x="120" y="404" font-size="12" fill="#888" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">edges[s]</text>
+  <text x="420" y="404" font-size="12" fill="#888" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">what happens to this arrow</text>
+  <ellipse cx="60" cy="436" rx="18" ry="15" fill="#ffffff" stroke="#999" stroke-width="1.4"/>
+  <text x="60" y="436" font-size="12" fill="#999" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">1</text>
+  <rect x="120" y="420" width="112" height="32" rx="7" fill="#ffffff" stroke="#f0b89b" stroke-width="1.6"/>
+  <text x="176.0" y="436" font-size="13" fill="#c2410c" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">(EPS, 2)</text>
+  <rect x="240" y="420" width="112" height="32" rx="7" fill="#ffffff" stroke="#f0b89b" stroke-width="1.6"/>
+  <text x="296.0" y="436" font-size="13" fill="#c2410c" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">(EPS, 4)</text>
+  <text x="420" y="436" font-size="12" fill="#888" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">x is EPS, so x == &#39;b&#39; is never true. Nothing is taken</text>
+  <ellipse cx="60" cy="480" rx="18" ry="15" fill="#ffffff" stroke="#999" stroke-width="1.4"/>
+  <text x="60" y="480" font-size="12" fill="#999" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">2</text>
+  <rect x="120" y="464" width="112" height="32" rx="7" fill="#ffffff" stroke="#e5e5e5" stroke-width="1.6"/>
+  <text x="176.0" y="480" font-size="13" fill="#bbbbbb" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">(&#39;a&#39;, 3)</text>
+  <rect x="240" y="464" width="112" height="32" rx="7" fill="#fffbeb" stroke="#b45309" stroke-width="1.6"/>
+  <text x="296.0" y="480" font-size="13" fill="#111" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">(&#39;b&#39;, 3)</text>
+  <text x="420" y="480" font-size="12" fill="#888" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">&#39;a&#39; drops out. &#39;b&#39; matches, so 3 is taken</text>
+  <ellipse cx="60" cy="524" rx="18" ry="15" fill="#ffffff" stroke="#999" stroke-width="1.4"/>
+  <text x="60" y="524" font-size="12" fill="#999" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">4</text>
+  <rect x="120" y="508" width="112" height="32" rx="7" fill="#fffbeb" stroke="#b45309" stroke-width="1.6"/>
+  <text x="176.0" y="524" font-size="13" fill="#111" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">(&#39;b&#39;, 5)</text>
+  <text x="420" y="524" font-size="12" fill="#888" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">&#39;b&#39; matches, so 5 is taken</text>
+  <text x="24" y="566" font-size="13" fill="#111" text-anchor="start" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">frozenset({3, 5})</text>
+  <text x="180" y="566" font-size="12" fill="#888" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">duplicates fold into one, since it is a set</text>
+  <text x="659" y="546" font-size="12" fill="#888" text-anchor="middle" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">move</text>
+  <text x="787" y="546" font-size="12" fill="#888" text-anchor="middle" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">closure</text>
+  <rect x="548" y="550" width="80" height="32" rx="7" fill="#ffffff" stroke="#e5e5e5" stroke-width="1.6"/>
+  <text x="588.0" y="566" font-size="13" fill="#bbbbbb" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">{1,2,4}</text>
+  <path d="M636,566 L682,566" fill="none" stroke="#b45309" stroke-width="1.6" marker-end="url(#h)"/>
+  <rect x="690" y="550" width="66" height="32" rx="7" fill="#fffbeb" stroke="#b45309" stroke-width="1.6"/>
+  <text x="723.0" y="566" font-size="13" fill="#111" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">{3,5}</text>
+  <path d="M764,566 L810,566" fill="none" stroke="#c2410c" stroke-width="1.6" marker-end="url(#o)"/>
+  <rect x="818" y="550" width="96" height="32" rx="7" fill="#ffffff" stroke="#cccccc" stroke-width="1.6"/>
+  <text x="866.0" y="566" font-size="13" fill="#111" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">{2,3,4,5}</text>
+  </svg>

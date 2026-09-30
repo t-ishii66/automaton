@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 300" width="780" height="300" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="d" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#444"/></marker>
+    <marker id="o" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#c2410c"/></marker>
+  </defs>
+  <rect width="780" height="300" fill="#ffffff"/>
+  <text x="24" y="30" font-size="14" fill="#333" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="600">The machine for ab?c</text>
+  <ellipse cx="110" cy="130" rx="14" ry="15" fill="#ffffff" stroke="#999" stroke-width="1.4"/>
+  <text x="110" y="130" font-size="11" fill="#999" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">i</text>
+  <ellipse cx="270" cy="130" rx="14" ry="15" fill="#ffffff" stroke="#999" stroke-width="1.4"/>
+  <text x="270" y="130" font-size="11" fill="#999" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">1</text>
+  <ellipse cx="440" cy="130" rx="14" ry="15" fill="#ffffff" stroke="#999" stroke-width="1.4"/>
+  <text x="440" y="130" font-size="11" fill="#999" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">2</text>
+  <ellipse cx="600" cy="130" rx="19" ry="20" fill="#ffffff" stroke="#111" stroke-width="1.8"/>
+  <ellipse cx="600" cy="130" rx="14" ry="15" fill="#ffffff" stroke="#111" stroke-width="1.8"/>
+  <text x="600" y="130" font-size="11" fill="#111" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">f</text>
+  <path d="M126,130 L247,130" fill="none" stroke="#444" stroke-width="1.6" marker-end="url(#d)"/>
+  <text x="186" y="110" font-size="13" fill="#444" text-anchor="middle" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="600">a</text>
+  <path d="M456,130 L573,130" fill="none" stroke="#444" stroke-width="1.6" marker-end="url(#d)"/>
+  <text x="514" y="110" font-size="13" fill="#444" text-anchor="middle" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="600">c</text>
+  <path d="M283,120 C320,78 388,78 425,118" fill="none" stroke="#444" stroke-width="1.6" marker-end="url(#d)"/>
+  <text x="354" y="80" font-size="13" fill="#444" text-anchor="middle" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="600">b</text>
+  <text x="354" y="56" font-size="12" fill="#888" text-anchor="middle" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">the road that reads b</text>
+  <path d="M283,140 C320,182 388,182 425,142" fill="none" stroke="#c2410c" stroke-width="1.6" marker-end="url(#o)"/>
+  <text x="354" y="182" font-size="13" fill="#c2410c" text-anchor="middle" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="600">ε</text>
+  <text x="354" y="206" font-size="12" fill="#c2410c" text-anchor="middle" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">the road that skips, reading nothing</text>
+  <text x="646" y="100" font-size="13" fill="#111" text-anchor="start" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">abc</text>
+  <text x="646" y="160" font-size="13" fill="#111" text-anchor="start" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">ac</text>
+  <text x="690" y="100" font-size="12" fill="#888" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">matches</text>
+  <text x="676" y="160" font-size="12" fill="#888" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">matches</text>
+  <text x="24" y="262" font-size="12.5" fill="#444" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">All ? does is lay one “road that skips” beside the road through the body.</text>
+  <text x="24" y="284" font-size="12.5" fill="#888" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">One ε arrow was added. Not a single state was.</text>
+</svg>

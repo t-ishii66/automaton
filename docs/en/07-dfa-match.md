@@ -59,7 +59,7 @@ add it to both `out` and `todo`. `out` is for accumulating the answer, `todo` is
 Once `todo` becomes empty, there is nowhere left that can be extended.
 Calling `closure(nfa, [1])` on the NFA for `a(a|b)*bb` stops in 3 moves.
 
-![How closure works](../ja/img/tool-closure.svg)
+![How closure works](img/tool-closure.svg)
 
 Since the same state is never pushed onto `todo` twice, it stops even in the case where **we can come back to the original state by following ε transitions alone**.
 Following the ε transitions of `a(a|b)*bb` (`1→2`, `1→4`, `3→2`, `3→4`) does not bring us back to the original, but
@@ -94,12 +94,12 @@ it has to be a set that does not change.
 
 Looked at from the code side, what `closure` is doing is putting things in and taking them out of 2 containers.
 
-![What the loop of closure is doing](../ja/img/tool-closure-code.svg)
+![What the loop of closure is doing](img/tool-closure-code.svg)
 
 `move`, conversely, follows not a single ε and advances by just one symbol's worth.
 Whichever state in the set the arrow leaves from, if the symbol matches then its destination is collected.
 
-![How move works](../ja/img/tool-move.svg)
+![How move works](img/tool-move.svg)
 
 Advancing one step by a symbol and then widening by ε — that is, `closure(move(...))` —
 becomes one square of the `from_nfa` that follows.
@@ -143,12 +143,12 @@ in the first line and in the `accept = ...` line respectively.
 Until `todo` becomes empty, we take out one set at a time and find the destination for each symbol.
 The one taken out is `cur`, and the destination found is `nxt`.
 
-![How from_nfa works](../ja/img/tool-subset.svg)
+![How from_nfa works](img/tool-subset.svg)
 
 After going round 5 times `todo` becomes empty, and the sets — 5 of them — are all out. These are the states of the DFA.
 Redrawn with circles and arrows, it is the same machine as the one we made by hand in [Chapter 03](03-nfa-to-dfa.md).
 
-![The DFA made by taking the 5 sets that came out as states, just as they are](../ja/img/tool-dfa.svg)
+![The DFA made by taking the 5 sets that came out as states, just as they are](img/tool-dfa.svg)
 
 Let us confirm it in the form of a transition table too.
 `table` prints its headers in Japanese, the way `automaton/dfa.py`
@@ -314,7 +314,7 @@ and the `key`s get rebuilt too. That is why it is necessary to repeat until no s
 
 Following how it actually finishes in 2 rounds gives this.
 
-![How minimize works](../ja/img/tool-minimize.svg)
+![How minimize works](img/tool-minimize.svg)
 
 On the 1st round 2 groups became 4 groups, and on the 2nd round the number of groups did not change, so it stops.
 Since "by which symbols can we go" is in the `key`, `i`, which has no destination by `b`,
@@ -323,7 +323,7 @@ takes effect not as separate processing, but as part of the `key`.
 
 Taking the 4 groups that remain as states, just as they are, gives this.
 
-![The DFA brought together into 4 states](../ja/img/tool-dfa-min.svg)
+![The DFA brought together into 4 states](img/tool-dfa-min.svg)
 
 Let us confirm it in the form of a transition table too.
 
@@ -355,7 +355,7 @@ def accepts(dfa, text):
 
 There is neither searching nor backtracking. It finishes in time proportional to the input length.
 
-![How accepts works](../ja/img/tool-accepts.svg)
+![How accepts works](img/tool-accepts.svg)
 
 The variable `s` is rewritten exactly once per character.
 It is the same route we followed by hand in [Chapter 04](04-minimize.md).

@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 724" width="980" height="724" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif">
+  <defs><marker id="d" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#444"/></marker><marker id="h" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker><marker id="g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#bbbbbb"/></marker></defs>
+  <rect width="980" height="724" fill="#ffffff"/>
+  <text x="24" y="30" font-size="15" fill="#555" text-anchor="start" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">merge(keep, drop)</text>
+  <text x="184" y="31" font-size="13" fill="#888" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">— fold state drop into state keep</text>
+  <line x1="24" y1="46" x2="956" y2="46" stroke="#eeeeee" stroke-width="1"/>
+  <text x="214" y="66" font-size="13" fill="#666" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="600">what is in edges</text>
+  <text x="845" y="66" font-size="13" fill="#666" text-anchor="middle" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="600">In the figure</text>
+  <text x="24" y="100" font-size="15" fill="#333" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">just before the call</text>
+  <text x="24" y="124" font-size="12" fill="#888" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">a and b have each</text>
+  <text x="24" y="142" font-size="12" fill="#888" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">just been made</text>
+  <ellipse cx="214" cy="100" rx="18" ry="15" fill="#ffffff" stroke="#999" stroke-width="1.4"/>
+  <text x="214" y="100" font-size="11" fill="#999" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">s</text>
+  <text x="252" y="100" font-size="15" fill="#888" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">:</text>
+  <rect x="266" y="84" width="112" height="32" rx="7" fill="#ffffff" stroke="#cccccc" stroke-width="1.6"/>
+  <text x="322.0" y="100" font-size="14" fill="#111" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">(&#39;a&#39;, keep)</text>
+  <rect x="390" y="84" width="112" height="32" rx="7" fill="#fffbeb" stroke="#b45309" stroke-width="1.6"/>
+  <text x="446.0" y="100" font-size="14" fill="#111" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">(&#39;b&#39;, drop)</text>
+  <ellipse cx="214" cy="142" rx="25.4" ry="15" fill="#ffffff" stroke="#999" stroke-width="1.4"/>
+  <text x="214" y="142" font-size="11" fill="#999" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">keep</text>
+  <text x="252" y="142" font-size="15" fill="#888" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">:</text>
+  <text x="266" y="142" font-size="15" fill="#888" text-anchor="start" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">[ ]</text>
+  <ellipse cx="214" cy="184" rx="25.4" ry="15" fill="#ffffff" stroke="#999" stroke-width="1.4"/>
+  <text x="214" y="184" font-size="11" fill="#999" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">drop</text>
+  <text x="252" y="184" font-size="15" fill="#888" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">:</text>
+  <text x="266" y="184" font-size="15" fill="#888" text-anchor="start" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">[ ]</text>
+  <text x="214" y="214" font-size="12" fill="#888" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">only drop's row and the arrows pointing at drop move</text>
+  <ellipse cx="790" cy="142" rx="18" ry="15" fill="#ffffff" stroke="#999" stroke-width="1.4"/>
+  <text x="790" y="142" font-size="11" fill="#999" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">s</text>
+  <ellipse cx="900" cy="114" rx="25.4" ry="15" fill="#ffffff" stroke="#999" stroke-width="1.4"/>
+  <text x="900" y="114" font-size="11" fill="#999" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">keep</text>
+  <ellipse cx="900" cy="170" rx="25.4" ry="15" fill="#ffffff" stroke="#999" stroke-width="1.4"/>
+  <text x="900" y="170" font-size="11" fill="#999" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">drop</text>
+  <path d="M806,136 L872,120" fill="none" stroke="#444" stroke-width="1.6" marker-end="url(#d)"/>
+  <path d="M806,148 L870,164" fill="none" stroke="#444" stroke-width="1.6" marker-end="url(#d)"/>
+  <text x="838" y="114" font-size="12" fill="#444" text-anchor="middle" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">a</text>
+  <text x="836" y="174" font-size="12" fill="#444" text-anchor="middle" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">b</text>
+  <line x1="24" y1="240" x2="956" y2="240" stroke="#eeeeee" stroke-width="1"/>
+  <text x="24" y="272" font-size="15" fill="#333" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">① join the rows</text>
+  <text x="24" y="294" font-size="12" fill="#888" text-anchor="start" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">extend + pop</text>
+  <text x="214" y="270" font-size="13" fill="#111" text-anchor="start" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">self.edges[keep].extend(self.edges.pop(drop))</text>
+  <ellipse cx="214" cy="314" rx="25.4" ry="15" fill="#ffffff" stroke="#999" stroke-width="1.4"/>
+  <text x="214" y="314" font-size="11" fill="#999" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">keep</text>
+  <text x="252" y="314" font-size="15" fill="#888" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">:</text>
+  <text x="266" y="314" font-size="15" fill="#888" text-anchor="start" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">[ ]</text>
+  <rect x="330" y="298" width="134" height="32" rx="7" fill="#ffffff" stroke="#cccccc" stroke-width="1.6" stroke-dasharray="5 4"/>
+  <text x="397.0" y="314" font-size="14" fill="#bbbbbb" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">drop's row</text>
+  <ellipse cx="214" cy="368" rx="25.4" ry="15" fill="#ffffff" stroke="#cccccc" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <text x="214" y="368" font-size="11" fill="#bbbbbb" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">drop</text>
+  <text x="252" y="368" font-size="15" fill="#888" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">:</text>
+  <rect x="266" y="352" width="118" height="32" rx="7" fill="#ffffff" stroke="#cccccc" stroke-width="1.6" stroke-dasharray="5 4"/>
+  <text x="325.0" y="368" font-size="14" fill="#bbbbbb" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">row goes</text>
+  <path d="M388,360 C414,356 406,342 428,334" fill="none" stroke="#bbbbbb" stroke-width="1.6" marker-end="url(#g)"/>
+  <text x="700" y="304" font-size="12" fill="#888" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">append drop's row to the end</text>
+  <text x="700" y="326" font-size="12" fill="#888" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">of keep's row, then delete it</text>
+  <text x="700" y="358" font-size="12" fill="#888" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">here no arrow leaves drop yet,</text>
+  <text x="700" y="380" font-size="12" fill="#888" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">so there is nothing to append</text>
+  <line x1="24" y1="408" x2="956" y2="408" stroke="#eeeeee" stroke-width="1"/>
+  <text x="24" y="440" font-size="15" fill="#333" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">② redirect the</text>
+  <text x="24" y="462" font-size="15" fill="#333" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">destinations</text>
+  <text x="214" y="440" font-size="13" fill="#111" text-anchor="start" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">[(sym, keep if t == drop else t) for sym, t in out]</text>
+  <ellipse cx="214" cy="490" rx="18" ry="15" fill="#ffffff" stroke="#999" stroke-width="1.4"/>
+  <text x="214" y="490" font-size="11" fill="#999" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">s</text>
+  <text x="252" y="490" font-size="15" fill="#888" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">:</text>
+  <rect x="266" y="474" width="112" height="32" rx="7" fill="#ffffff" stroke="#cccccc" stroke-width="1.6"/>
+  <text x="322.0" y="490" font-size="14" fill="#111" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">(&#39;a&#39;, keep)</text>
+  <rect x="390" y="474" width="112" height="32" rx="7" fill="#fffbeb" stroke="#b45309" stroke-width="1.6"/>
+  <text x="446.0" y="490" font-size="14" fill="#111" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">(&#39;b&#39;, drop)</text>
+  <path d="M512,490 L548,490" fill="none" stroke="#b45309" stroke-width="1.6" marker-end="url(#h)"/>
+  <rect x="562" y="474" width="112" height="32" rx="7" fill="#fffbeb" stroke="#b45309" stroke-width="1.6"/>
+  <text x="618.0" y="490" font-size="14" fill="#111" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">(&#39;b&#39;, keep)</text>
+  <text x="700" y="478" font-size="12" fill="#888" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">only elements that pointed</text>
+  <text x="700" y="500" font-size="12" fill="#888" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">at drop are rewritten to keep</text>
+  <text x="214" y="528" font-size="12" fill="#888" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">every row is walked the same way. The number of arrows neither grows nor shrinks</text>
+  <line x1="24" y1="554" x2="956" y2="554" stroke="#eeeeee" stroke-width="1"/>
+  <text x="24" y="590" font-size="15" fill="#333" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">the result</text>
+  <ellipse cx="214" cy="590" rx="18" ry="15" fill="#ffffff" stroke="#999" stroke-width="1.4"/>
+  <text x="214" y="590" font-size="11" fill="#999" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">s</text>
+  <text x="252" y="590" font-size="15" fill="#888" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">:</text>
+  <rect x="266" y="574" width="112" height="32" rx="7" fill="#ffffff" stroke="#cccccc" stroke-width="1.6"/>
+  <text x="322.0" y="590" font-size="14" fill="#111" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">(&#39;a&#39;, keep)</text>
+  <rect x="390" y="574" width="112" height="32" rx="7" fill="#fffbeb" stroke="#b45309" stroke-width="1.6"/>
+  <text x="446.0" y="590" font-size="14" fill="#111" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">(&#39;b&#39;, keep)</text>
+  <ellipse cx="214" cy="632" rx="25.4" ry="15" fill="#ffffff" stroke="#999" stroke-width="1.4"/>
+  <text x="214" y="632" font-size="11" fill="#999" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">keep</text>
+  <text x="252" y="632" font-size="15" fill="#888" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">:</text>
+  <text x="266" y="632" font-size="15" fill="#888" text-anchor="start" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">[ ]</text>
+  <text x="330" y="632" font-size="12" fill="#888" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">the destinations came together, and drop's row is gone</text>
+  <ellipse cx="790" cy="606" rx="18" ry="15" fill="#ffffff" stroke="#999" stroke-width="1.4"/>
+  <text x="790" y="606" font-size="11" fill="#999" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">s</text>
+  <ellipse cx="900" cy="606" rx="25.4" ry="15" fill="#ffffff" stroke="#111" stroke-width="1.8"/>
+  <text x="900" y="606" font-size="11" fill="#111" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">keep</text>
+  <path d="M804,598 C830,574 852,574 872,595" fill="none" stroke="#444" stroke-width="1.6" marker-end="url(#d)"/>
+  <path d="M804,614 C830,638 852,638 872,617" fill="none" stroke="#444" stroke-width="1.6" marker-end="url(#d)"/>
+  <text x="838" y="570" font-size="12" fill="#444" text-anchor="middle" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">a</text>
+  <text x="838" y="642" font-size="12" fill="#444" text-anchor="middle" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">b</text>
+  <text x="24" y="682" font-size="12" fill="#888" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">Circles carry the variable names from the code. ③ union calls merge(left, right) just after a and b are made, so keep is left, drop is right</text>
+  <text x="24" y="704" font-size="12" fill="#888" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">A yellow box is an element being rewritten; dashed means it goes</text>
+  </svg>

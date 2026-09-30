@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" width="900" height="520" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="a1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#444"/>
+    </marker>
+    <marker id="a2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#c2410c"/>
+    </marker>
+  </defs>
+  <rect width="900" height="520" fill="#ffffff"/>
+  <g stroke="#e5e5e5" stroke-width="1">
+    <line x1="455" y1="14" x2="455" y2="506"/>
+    <line x1="14" y1="250" x2="886" y2="250"/>
+  </g>
+  <g fill="#666" font-size="15" font-weight="600">
+    <text x="20" y="30">① symbol a</text>
+    <text x="480" y="30">② concatenation ab</text>
+    <text x="20" y="278">③ union a|b</text>
+    <text x="480" y="278">④ repetition (a|b)*</text>
+  </g>
+
+  <g fill="none" stroke="#444" stroke-width="1.8" marker-end="url(#a1)">
+    <path d="M128,120 L232,120"/>
+    <path d="M578,120 L672,120"/>
+    <path d="M708,120 L802,120"/>
+    <path d="M134,348 C170,316 250,316 286,348"/>
+    <path d="M134,372 C170,404 250,404 286,372"/>
+    <path d="M638,360 L717,360"/>
+    <path d="M620,378 C640,420 715,420 735,380"/>
+  </g>
+
+  <g fill="none" stroke="#c2410c" stroke-width="1.8" marker-end="url(#a2)">
+    <path d="M523,360 L602,360"/>
+    <path d="M753,360 L832,360"/>
+    <path d="M735,342 C716,298 639,298 620,342"/>
+    <path d="M505,378 C570,474 785,474 850,378"/>
+  </g>
+
+  <g fill="#ffffff" stroke="#333" stroke-width="1.8">
+    <circle cx="110" cy="120" r="18"/>
+    <circle cx="250" cy="120" r="18"/>
+    <circle cx="560" cy="120" r="18"/>
+    <circle cx="690" cy="120" r="18"/>
+    <circle cx="820" cy="120" r="18"/>
+    <circle cx="120" cy="360" r="18"/>
+    <circle cx="300" cy="360" r="18"/>
+    <circle cx="505" cy="360" r="18"/>
+    <circle cx="620" cy="360" r="18"/>
+    <circle cx="735" cy="360" r="18"/>
+    <circle cx="850" cy="360" r="18"/>
+  </g>
+
+  <g font-size="15" font-weight="600" text-anchor="middle">
+    <g fill="#444">
+      <text x="180" y="108">a</text>
+      <text x="625" y="108">a</text>
+      <text x="755" y="108">b</text>
+      <text x="210" y="312">a</text>
+      <text x="210" y="420">b</text>
+      <text x="678" y="348">a</text>
+      <text x="678" y="432">b</text>
+    </g>
+    <g fill="#c2410c">
+      <text x="562" y="348">ε</text>
+      <text x="793" y="348">ε</text>
+      <text x="678" y="294">ε</text>
+      <text x="678" y="492">ε</text>
+    </g>
+  </g>
+</svg>

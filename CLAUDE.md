@@ -122,7 +122,11 @@ automaton/
 - **日本語が正本**（`docs/ja/`・`README-jp.md`）。`docs/en/`・`README.md` はその翻訳で、
   `doc-translator-ja-en` エージェントが生成したもの。**英語側を手書きしない。**
   日本語側を直したら、同じエージェントを再度かけて英語側を作り直す。
-  図（`docs/ja/img/`）は日英で共有する。英語側からは `../ja/img/…` で参照する。
+  図は 2 種類に分かれる。**文字の入っていない図**（純粋な状態遷移図と章扉のイラスト、計 17 点）は
+  日英で共有し、英語側から `../ja/img/…` で参照する。**日本語が入っている図**（20 点）は
+  `docs/en/img/` に英語版を置き、英語側から `img/…` で参照する。
+  日本語版の図に手を入れたら、英語版の同名ファイルも同じ変更を入れること。
+  どちらも `inkscape --export-type=png` で PNG にして**目視確認**する（作図の規則を参照）。
 - GitHub Pages（Jekyll + cayman）で公開する。`_config.yml` がリポジトリ直下にある。
   `docs/ja/*.md`・`docs/en/*.md` と両 README の先頭には **front matter が要る**。
   無い `.md` は Jekyll がページとして扱わず、素の markdown として配信されてしまう。

@@ -69,11 +69,11 @@ Reading the text one character at a time is the match decision that comes later 
 What the rules produce is a small tuple we call a **node**,
 whose head is the name of the kind and whose rest are the children. There are only 5 kinds.
 
-![The 5 kinds of node](../ja/img/tool-node-kinds.svg)
+![The 5 kinds of node](img/tool-node-kinds.svg)
 
 In the place of a child, another node goes in. That is why a node is a tree.
 
-![Nested tuples, and the tree they correspond to](../ja/img/06-node-nesting.svg)
+![Nested tuples, and the tree they correspond to](img/06-node-nesting.svg)
 
 The depth of the parentheses becomes, just as it is, the number of levels of the tree.
 The outermost `star` is the root, its child is `alt`, and its children in turn, the 2 `sym`s, are the leaves.
@@ -118,7 +118,7 @@ The 4 rules of the grammar become, just as they are, 4 functions. Every one of t
 `alt`, `cat` and `rep` all have the same shape. First they call the rule one level stronger once, and then,
 as long as the marker keeps coming, they **take the node so far as the left child and wrap it up again**.
 
-![The shape of the 4 functions and the staircase of calls](../ja/img/tool-parse-rules.svg)
+![The shape of the 4 functions and the staircase of calls](img/tool-parse-rules.svg)
 
 Because `atom` calls `alt` back again, the functions recurse too.
 This way of reading is called **recursive descent parsing**.
@@ -175,7 +175,7 @@ The contents of the NFA are effectively just `edges`, and this is
 **a dictionary from a "state" to a "list of the arrows leaving it"**.
 The contents at the point where `a(a|b)*bb` has been finished correspond to this.
 
-![The structure of edges](../ja/img/tool-edges.svg)
+![The structure of edges](img/tool-edges.svg)
 
 One element of the list, `(symbol, destination)`, corresponds just as it is to one arrow in the figure.
 The reason `(EPS, 2)` and `(EPS, 4)` are lined up in the row for state `1` is
@@ -280,7 +280,7 @@ Since every rule "returns the state reached after finishing the construction", h
 
 Lining up what the 5 rules do to `edges` gives the following.
 
-![The 5 rules and how edges changes](../ja/img/tool-build-edges.svg)
+![The 5 rules and how edges changes](img/tool-build-edges.svg)
 
 There are 3 points worth noticing.
 
@@ -310,7 +310,7 @@ The ⑤ we add after this also increases ε by only one arrow. ② and ③ add n
 
 The `?` we decided to add in [Chapter 05](05-subset.md) is the 3 lines of `opt`.
 
-![The construction rule for ⑤ optional](../ja/img/06-opt.svg)
+![The construction rule for ⑤ optional](img/06-opt.svg)
 
 Build the body from `s`, and when we arrive at `end`, draw one ε from `s` to `end`.
 That becomes the road that "skips the body". Not a single new state is made.
@@ -348,7 +348,7 @@ It concatenates the row for `drop` onto `keep` and then deletes it, and switches
 
 Following what this concatenation and switching do to `edges`, in order from just before the call, gives this.
 
-![What merge does to edges](../ja/img/tool-merge.svg)
+![What merge does to edges](img/tool-merge.svg)
 
 Note that `drop` is the state right after a branch has been finished, so there is not yet a single arrow leaving it.
 That is, the first concatenation actually moves nothing, and the only part that has an effect is the switching in the latter half

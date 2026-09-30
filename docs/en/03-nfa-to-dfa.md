@@ -37,7 +37,7 @@ This way no branching occurs, and there is no need to try and go back.
 
 ## Eliminating ε Transitions
 
-![Bringing two states joined by ε together into one](../ja/img/03-merge.svg)
+![Bringing two states joined by ε together into one](img/03-merge.svg)
 
 If we can go from `(s)` to `(t)` by ε, then when we are in `(s)` we may as well think we are in `(t)` too.
 Since we can move without reading input, there is no point in distinguishing which of the two we are in.

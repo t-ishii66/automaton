@@ -10,7 +10,7 @@ lang: en
 The NFA we saw in [Chapter 01](01-automaton.md) was handed to us out of thin air.
 But it can be built mechanically from the regular expression. There are only 4 construction rules.
 
-![The NFA construction rules](../ja/img/02-thompson.svg)
+![The NFA construction rules](img/02-thompson.svg)
 
 An arrow with a symbol on it means moving after reading one character of input; an ε arrow means being able to move without reading input.
 Every circle is a state.
@@ -62,7 +62,7 @@ With either `a` or `b`, one character is read and we move from `2` to `3`. This 
 The part made in step 1 (the `a|b` portion) is the **body** that gets repeated.
 Add one state before it and one after it, calling the front one `1` and the back one `4`. Then draw 4 ε arrows.
 
-![The NFA corresponding to (a|b)*](../ja/img/02-step2.svg)
+![The NFA corresponding to (a|b)*](img/02-step2.svg)
 
 Grey is the body made in step 1. Each of the 4 orange arrows is in charge of
 **entering** the body, **skipping** the body (the 0-times case),
