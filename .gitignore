@@ -23,3 +23,7 @@ service-account*.json
 *.pem
 *.key
 id_rsa*
+
+# Claude Code local state (per-machine settings and worktree checkouts)
+.claude/settings.local.json
+.claude/worktrees/
