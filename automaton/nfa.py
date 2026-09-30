@@ -1,4 +1,10 @@
-"""Regular expression -> NFA, by Thompson's construction (see docs/ja/02-regex-to-nfa.md)."""
+"""Regular expression -> NFA, by Thompson's construction (see docs/ja/02-regex-to-nfa.md).
+
+Union is the one rule that departs from the textbook form: the two branches
+share a start state and their end states are merged, rather than being wrapped
+in a new pair of states joined by four epsilon edges. Symbol, concatenation
+and star are Thompson's.
+"""
 
 from .regex import parse
 
