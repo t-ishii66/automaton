@@ -102,8 +102,9 @@ class _Parser:
         c = self.take()
         if c == "(":
             node = self.alt()
-            if self.take() != ")":
+            if self.peek() != ")":
                 raise ValueError("')' expected")
+            self.take()
             return node
         if c in "|*?)":
             raise ValueError(f"unexpected {c!r}")
