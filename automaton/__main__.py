@@ -1,4 +1,4 @@
-"""Command line entry point (see docs/ja/appendix-tool.md).
+"""Command line entry point (see docs/ja/07-dfa-match.md).
 
     python3 -m automaton <pattern> [text ...]
 

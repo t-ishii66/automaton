@@ -1,6 +1,6 @@
-"""Regular expression parser (see docs/ja/02-regex-to-nfa.md).
+"""Regular expression parser (see docs/ja/06-parse-nfa.md).
 
-Recursive descent over this grammar -- the same style as the LL(1) appendix:
+Recursive descent over this grammar:
 
     alt  -> cat { '|' cat }
     cat  -> rep { rep }
