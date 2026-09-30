@@ -76,7 +76,11 @@ def rename(dfa):
 
 
 def minimize(dfa):
-    """Merge states that cannot be told apart, by refining a partition."""
+    """Merge states that cannot be told apart, by refining a partition.
+
+    Takes a DFA that has been through `rename`: a group of merged states is
+    named by joining the names of its members, so those names must be strings.
+    """
     alphabet = sorted({sym for _, sym in dfa.trans})
     rank = {s: i for i, s in enumerate(dfa.states)}
 
