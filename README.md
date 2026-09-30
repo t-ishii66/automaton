@@ -112,8 +112,8 @@ ok test_bad_patterns_raise_value_error
 - Base document: t-ishii66
 - Documentation: Claude Opus 5
 - Coding: Claude Opus 5
-- Documentation review: t-ishii6
-- Code review: t-ishii6
+- Documentation review: t-ishii66
+- Code review: t-ishii66
 - Illustrations: Codex GPT6
 - Version: 1.0.0
 
