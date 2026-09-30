@@ -62,8 +62,8 @@
   <text x="660" y="212" font-size="11" fill="#888" text-anchor="start" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">(&#39;cat&#39;, node, rep())</text>
   <rect x="644" y="248" width="288" height="52" rx="7" fill="#ffffff" stroke="#bbbbbb" stroke-width="1.6"/>
   <text x="660" y="266" font-size="13" fill="#111" text-anchor="start" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">rep</text>
-  <text x="720" y="266" font-size="12" fill="#333" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">* が来たら包む</text>
-  <text x="660" y="286" font-size="11" fill="#888" text-anchor="start" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">(&#39;star&#39;, node)</text>
+  <text x="720" y="266" font-size="12" fill="#333" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">* か ? が来たら包む</text>
+  <text x="660" y="286" font-size="11" fill="#888" text-anchor="start" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">(&#39;star&#39;, node)  (&#39;opt&#39;, node)</text>
   <rect x="644" y="322" width="288" height="52" rx="7" fill="#ffffff" stroke="#bbbbbb" stroke-width="1.6"/>
   <text x="660" y="340" font-size="13" fill="#111" text-anchor="start" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="normal">atom</text>
   <text x="720" y="340" font-size="12" fill="#333" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">1 文字取る。( なら alt へ</text>
@@ -79,5 +79,5 @@
   <text x="644" y="394" font-size="12" fill="#888" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">( の中身は alt から読み直す。</text>
   <text x="644" y="414" font-size="12" fill="#888" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">ここで関数が再帰し、入れ子が一段深くなる</text>
   <text x="24" y="452" font-size="12" fill="#888" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">選択と連接は、読むたびに「それまで」を左の子にして包むので、node は左へ伸びる（この後の木で cat が 3 つ並ぶのはこのため）</text>
-  <text x="24" y="474" font-size="12" fill="#888" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">rep だけは子が 1 つなので (&#39;star&#39;, node) と包む。atom は包まず、1 文字を (&#39;sym&#39;, c) にして返す</text>
+  <text x="24" y="474" font-size="12" fill="#888" text-anchor="start" dominant-baseline="central" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="normal">rep だけは子が 1 つなので (&#39;star&#39;, node) / (&#39;opt&#39;, node) と包む。atom は包まず、1 文字を (&#39;sym&#39;, c) にして返す</text>
   </svg>
