@@ -82,8 +82,20 @@ docs/ja/            解説（日本語）。図は手書きの SVG
 tests/              各段階が解説の図表と一致すること、re と同じ判定になることを確認
 ```
 
-テストは `pytest` で走るが、素の `assert` で書いてあるので無くても動かせる。
+テストは `pytest` で走る。
 
 ```
 $ python3 -m pytest tests -q
+```
+
+素の `assert` で書いてあるので、pytest が入っていない環境ではファイルを直接実行してもよい。
+どちらでも同じ検査が走る。
+
+```
+$ python3 tests/test_pipeline.py
+ok test_nfa_matches_the_figure
+ok test_subset_construction_matches_the_figure
+ok test_minimized_dfa_matches_the_figure
+ok test_same_answers_as_the_regex_module
+ok test_other_patterns
 ```

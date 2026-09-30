@@ -71,3 +71,12 @@ def test_other_patterns():
         for n in range(6):
             for text in ("".join(t) for t in product("abcd", repeat=n)):
                 assert accepts(dfa, text) == bool(re.fullmatch(pattern, text)), (pattern, text)
+
+
+if __name__ == "__main__":
+    # Run the tests without pytest: call every test_* function defined above,
+    # in the order they appear. A failing assert stops the run with a traceback.
+    for name, fn in list(globals().items()):
+        if name.startswith("test_"):
+            fn()
+            print("ok", name)

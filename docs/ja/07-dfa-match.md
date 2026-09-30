@@ -391,6 +391,17 @@ no match  'colouur'
 $ python3 -m pytest tests -q
 ```
 
+pytest が入っていなければ、ファイルを直接実行しても同じ検査が走る。
+
+```
+$ python3 tests/test_pipeline.py
+ok test_nfa_matches_the_figure
+ok test_subset_construction_matches_the_figure
+ok test_minimized_dfa_matches_the_figure
+ok test_same_answers_as_the_regex_module
+ok test_other_patterns
+```
+
 ---
 
 これで、正規表現がどう動くのかを一通り見たことになる。
