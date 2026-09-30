@@ -1,5 +1,6 @@
 ---
 title: "03. NFA を DFA に変換する"
+description: "ε 遷移を消して決定性にする。ε 閉包と部分集合構成で、7 状態の NFA を 5 状態の DFA に変換する。"
 lang: ja
 ---
 

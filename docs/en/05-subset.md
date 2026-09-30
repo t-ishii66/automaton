@@ -1,5 +1,6 @@
 ---
 title: "05. Deciding Which Regular Expressions We Handle"
+description: "The implementation starts here. The regular expressions handled are narrowed to four operations — concatenation, union, repetition, optional — and the tool takes anything in that range."
 lang: en
 ---
 

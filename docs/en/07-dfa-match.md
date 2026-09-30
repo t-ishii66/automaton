@@ -1,5 +1,6 @@
 ---
 title: "07. Turning It into a DFA and Deciding Matches"
+description: "Turn the subset construction, minimization and match decision into code, and wire the regular expression engine together as a command."
 lang: en
 ---
 

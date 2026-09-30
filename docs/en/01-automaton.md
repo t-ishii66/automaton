@@ -1,5 +1,6 @@
 ---
 title: "01. What a Finite Automaton Is"
+description: "A machine made of nothing but states and transitions. How to read a finite automaton, and the difference between an NFA and a DFA, through one example."
 lang: en
 ---
 

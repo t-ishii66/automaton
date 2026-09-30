@@ -1,7 +1,6 @@
 ---
 title: "Automata — How Regular Expressions Work"
 description: "Build a regular expression engine from scratch: regex to NFA, subset construction to DFA, state minimization, and matching — drawn, worked by hand, then written in Python."
-keywords: "automata, finite automaton, NFA, DFA, nondeterministic finite automaton, deterministic finite automaton, regular expression, regex engine, how regex works, Thompson construction, subset construction, powerset construction, DFA minimization, epsilon closure, epsilon transition, state machine, transition table, recursive descent parser, parsing, lexical analysis, compiler, formal languages, pattern matching, Python, from scratch, build your own, tutorial, teaching material, documentation, open source, GitHub, automaton"
 permalink: /
 ---
 

@@ -135,6 +135,12 @@ automaton/
   **英語側を再翻訳したら front matter を貼り直すこと。**
   README 同士・章同士のリンクは `.md` のままでよい（`jekyll-relative-links` が
   公開時に `.html` へ書き換える。github.com 上ではそのまま動く）。
+- front matter の `description` は各ページに必ず置く。無いと `_config.yml` のサイト全体の
+  説明（英語）が、バナー・`<meta name="description">`・OGP の 3 箇所に出てしまう。
+  **`description` に `|` を書かないこと。** `jekyll-seo-tag` が markdownify に通すため、
+  `a(a|b)*bb` は表セルと解釈されて `a(a b)*bb` に化ける。
+- front matter に `keywords` は置かない。`jekyll-seo-tag` は meta を出さず（実測）、
+  github.com が front matter を表として描くぶんだけリポジトリのトップが汚れる。
 - 1 つの節は「図 → 手で追う計算 → 得られた表・図」の順で構成する。
 - サブセットは「連接・選択・繰り返し・省略の 4 演算（＋優先順位を変える括弧）」と数える。
   このうち最初の 3 つが理論上の正規表現の定義に出てくる演算そのもので、`?` は 05 で足した分。

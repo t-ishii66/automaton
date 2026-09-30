@@ -1,5 +1,6 @@
 ---
 title: "02. Building an NFA from a Regular Expression"
+description: "Build an NFA from a regular expression mechanically. Four construction rules — symbol, concatenation, union, repetition — are all it takes."
 lang: en
 ---
 

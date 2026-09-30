@@ -1,5 +1,6 @@
 ---
 title: "04. Minimizing the Number of States"
+description: "Merge the states that cannot be told apart. Refining the partition over and over takes the 5-state DFA down to 4."
 lang: en
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: "06. Reading a Pattern and Turning It into an NFA"
+description: "Read the pattern by recursive descent, extract its structure, and apply the five construction rules to build the NFA."
 lang: en
 ---
 

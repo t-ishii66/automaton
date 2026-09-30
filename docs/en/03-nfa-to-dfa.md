@@ -1,5 +1,6 @@
 ---
 title: "03. Converting an NFA into a DFA"
+description: "Remove the ε transitions and make it deterministic. Epsilon closure and the subset construction turn a 7-state NFA into a 5-state DFA."
 lang: en
 ---
 
