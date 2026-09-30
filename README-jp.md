@@ -1,5 +1,7 @@
 # オートマトン — 正規表現がどう動くのか
 
+[English](README.md)
+
 ![自然公園で迎えるBobとAlice、リスとウサギと小鳥](docs/ja/img/alice-bob-cover.png)
 
 正規表現はあらゆる場面で使われている。
@@ -79,6 +81,7 @@ automaton/          実装。正規表現 → NFA → DFA → 最小化 → 一�
 ├── dfa.py          ε 閉包 / 部分集合構成 / 最小化 / 一致判定
 └── __main__.py     コマンドラインの入口
 docs/ja/            解説（日本語）。図は手書きの SVG
+docs/en/            その英訳。図は docs/ja/img/ を共有する
 tests/              各段階が解説の図表と一致すること、re と同じ判定になることを確認
 ```
 
@@ -101,3 +104,16 @@ ok test_other_patterns
 ok test_patterns_with_an_epsilon_cycle
 ok test_bad_patterns_raise_value_error
 ```
+
+
+## クレジット
+
+- 企画: t-ishii66(大学で物理を学ぶ。システムエンジニア。英会話奮闘中)
+- ベースドキュメント: t-ishii66
+- ドキュメント: Claude Opus 5
+- コーディング: Claude Opus 5
+- ドキュメントレビュー: t-ishii6
+- コードレビュー: t-ishii6
+- イラスト: Codex GPT6
+- バージョン: 1.0.0
+
