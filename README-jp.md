@@ -98,4 +98,6 @@ ok test_subset_construction_matches_the_figure
 ok test_minimized_dfa_matches_the_figure
 ok test_same_answers_as_the_regex_module
 ok test_other_patterns
+ok test_patterns_with_an_epsilon_cycle
+ok test_bad_patterns_raise_value_error
 ```

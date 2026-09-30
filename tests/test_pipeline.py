@@ -73,6 +73,35 @@ def test_other_patterns():
                 assert accepts(dfa, text) == bool(re.fullmatch(pattern, text)), (pattern, text)
 
 
+def test_patterns_with_an_epsilon_cycle():
+    # A repetition whose body accepts the empty word builds an epsilon cycle
+    # (see docs/ja/03-nfa-to-dfa.md): `closure` has to stop walking it. `re`
+    # rejects "a**" as a multiple repeat, so each pattern is paired with an
+    # equivalent one that `re` does accept.
+    for pattern, reference in [("a**", "(?:a*)*"),
+                               ("a?*", "(?:a?)*"),
+                               ("(a?)*", "(?:a?)*"),
+                               ("(a*)*", "(?:a*)*"),
+                               ("(a?b?)*", "(?:a?b?)*"),
+                               ("((a|b)?)*", "(?:(?:a|b)?)*")]:
+        dfa = minimize(rename(from_nfa(build(pattern))))
+        for n in range(6):
+            for text in ("".join(t) for t in product("ab", repeat=n)):
+                assert accepts(dfa, text) == bool(re.fullmatch(reference, text)), (pattern, text)
+
+
+def test_bad_patterns_raise_value_error():
+    # docs/ja/05-subset.md promises the empty pattern and the empty group are
+    # not accepted. The exception type is part of the API: __main__ catches
+    # ValueError and nothing else, so anything else escapes as a traceback.
+    for pattern in ["", "(", "(a", ")", "a)", "*a", "?a", "a|", "|a", "()", "(a|)"]:
+        try:
+            build(pattern)
+        except ValueError:
+            continue
+        raise AssertionError(pattern)
+
+
 if __name__ == "__main__":
     # Run the tests without pytest: call every test_* function defined above,
     # in the order they appear. A failing assert stops the run with a traceback.
