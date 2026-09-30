@@ -135,7 +135,7 @@ Actually having it read `a(a|b)*bb` gives this.
 
 The parentheses are deep and it is hard to read, but drawn as a tree it has a straightforward shape.
 
-![The node for a(a|b)*bb](../ja/img/tool-node-tree.svg)
+![The node for a(a\|b)*bb](../ja/img/tool-node-tree.svg)
 
 The reason 3 `cat`s are lined up extending to the left is that the concatenation of the 4 items `a`, `(a|b)*`, `b` and `b`
 is brought together 2 at a time from the left.

@@ -52,7 +52,7 @@ a(a|b)*bb
 It is the collection of strings that begin with `a`, continue with some number of `a`s and `b`s, and end with `bb`.
 A finite automaton corresponding to this looks, for example, like the following.
 
-![The NFA corresponding to the regular expression a(a|b)*bb](../ja/img/01-nfa.svg)
+![The NFA corresponding to the regular expression a(a\|b)*bb](../ja/img/01-nfa.svg)
 
 Orange is an ε transition. Two ε transitions leave state `1`,
 and whether it goes to `2` or to `4` is not determined by the input.

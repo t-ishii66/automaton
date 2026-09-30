@@ -136,7 +136,7 @@ class _Parser:
 
 括弧が深くて読みにくいが、木に描けば素直な形をしている。
 
-![a(a|b)*bb の node](img/tool-node-tree.svg)
+![a(a\|b)*bb の node](img/tool-node-tree.svg)
 
 `cat` が 3 つ並んで左に伸びているのは、`a`・`(a|b)*`・`b`・`b` の 4 つの連接を
 左から 2 つずつまとめているためである。

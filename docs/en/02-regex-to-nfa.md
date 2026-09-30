@@ -53,7 +53,7 @@ The names of the states are assigned in advance so as to match the figure that w
 Prepare 2 states, and from one to the other draw the 2 arrows `a` and `b`. This is figure ③ itself.
 We call these 2 states `2` and `3`.
 
-![The NFA corresponding to a|b](../ja/img/02-step1.svg)
+![The NFA corresponding to a\|b](../ja/img/02-step1.svg)
 
 With either `a` or `b`, one character is read and we move from `2` to `3`. This is the shape of "union".
 
@@ -62,7 +62,7 @@ With either `a` or `b`, one character is read and we move from `2` to `3`. This 
 The part made in step 1 (the `a|b` portion) is the **body** that gets repeated.
 Add one state before it and one after it, calling the front one `1` and the back one `4`. Then draw 4 ε arrows.
 
-![The NFA corresponding to (a|b)*](img/02-step2.svg)
+![The NFA corresponding to (a\|b)*](img/02-step2.svg)
 
 Grey is the body made in step 1. Each of the 4 orange arrows is in charge of
 **entering** the body, **skipping** the body (the 0-times case),
@@ -106,7 +106,7 @@ The transitions drawn come to 9 in total.
 
 Drawn as a figure, it is the very NFA presented in Chapter 01.
 
-![The NFA corresponding to the regular expression a(a|b)*bb](../ja/img/01-nfa.svg)
+![The NFA corresponding to the regular expression a(a\|b)*bb](../ja/img/01-nfa.svg)
 
 The state names `i, 1, 2, ..., f` were assigned in the order in which the edges are followed from the start state.
 
